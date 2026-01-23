@@ -15,11 +15,16 @@ const lato = localFont({
   variable: '--font-lato',
 });
 
+const oswald = localFont({
+  src: './fonts/Oswald-Bold.ttf',
+  variable: '--font-oswald',
+});
+
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${gupter.variable} ${lato.variable}`}>
+      <body className={`${inter.variable} ${gupter.variable} ${lato.variable} ${oswald.variable}`}>
         {children}
       </body>
     </html>

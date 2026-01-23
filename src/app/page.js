@@ -22,31 +22,35 @@ export default function Home() {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
+                <a className="nav-link" aria-current="page" href="#sobre">
                   Sobre
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#chegar">
                   Como Chegar
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#atrativos">
                   Atrativos
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Catálogo</a>
+                <a className="nav-link" href="#folheto">
+                  Catálogo
+                </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Agências Receptivas</a>
+                <a className="nav-link" href="#agencia">
+                  Agências Receptivas
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <section className={styles.fundomain}>
+      <section className={styles.fundomain} id="main">
         <Image
           className={styles.montanha1}
           src="/montanha1.svg"
@@ -79,72 +83,549 @@ export default function Home() {
           height={500}
         />
       </section>
-      <section className={styles.fundoagua}>
+      <section className={styles.fundoagua} id="sobre"></section>
+      <div className="container mt-5 mb-5">
+        <div className="row">
+          <div className="col d-flex justify-content-center align-items-center">
+            <Image
+              className={styles.deputado}
+              src="/deputado.JPG"
+              alt="Foto da estátua do Deputado Abilío Wolney na praça do Coreto"
+              width={350}
+              height={500}
+            />
+          </div>
+          <div className="col">
+            <h2 className={`${styles.sobre} text-center fs-1`}>
+              Sobre o Município
+            </h2>
+            <p className={styles.sobre}>
+              A história de Dianópolis, localizada no sudeste do estado do
+              Tocantins, está profundamente ligada aos caminhos do interior do
+              Brasil, à exploração do ouro, à religiosidade popular e à
+              resistência de seus habitantes diante das transformações
+              políticas, econômicas e sociais ao longo dos séculos.
+              <br />
+              <br />
+              A religiosidade teve papel fundamental na consolidação do povoado.
+              Esse sentimento religioso foi profundamente marcado por um dos
+              episódios mais trágicos da história local: “Barulho do Duro” ou
+              “Chacina do Duro”, em 1919, quando um conflito coronelístico levou
+              ao massacre de nove cidadãos ligados ao poderoso clã dos Wolney,
+              em uma região conhecida como Duro. Fato que abalou profundamente a
+              população do então arraial de Dianas. O episódio gerou comoção,
+              medo e indignação, mas também fortaleceu a fé popular como forma
+              de enfrentamento da dor e da violência.
+              <br />
+              Como resposta simbólica à tragédia, a comunidade ergueu a
+              Capelinha dos Nove, em homenagem às nove vítimas da chacina. O
+              local passou a ser visto como espaço de oração e respeito
+              transformando o luto coletivo em devoção. Com o tempo, a Capelinha
+              dos Nove consolidou-se como um dos mais importantes marcos
+              históricos de Dianópolis, representando a resistência e a união do
+              povo diante das adversidades.
+              <br />
+              <br />
+              Com o declínio gradual da mineração, Dianópolis passou a se
+              sustentar principalmente pela agricultura, pecuária e comércio
+              local. Mesmo assim, manteve sua importância regional como ponto de
+              ligação entre diferentes áreas do antigo norte goiano.
+              <br />
+              <br />
+              Atualmente, Dianópolis a economia baseia-se principalmente na
+              agropecuária, no comércio e nos serviços, além do crescente
+              potencial turístico. Belezas naturais como cachoeiras, vales,
+              serras e lagoas, aliadas ao patrimônio histórico e às
+              manifestações culturais, atraem visitantes e fortalecem o turismo
+              sustentável. Ao mesmo tempo em que preserva suas raízes
+              históricas, Dianópolis busca se adaptar aos desafios do mundo
+              contemporâneo, investindo em desenvolvimento urbano, educação e
+              valorização cultural. A cidade segue construindo sua história com
+              base na força de seu povo, na memória de seu passado e na
+              esperança de um futuro próspero.
+            </p>
+          </div>
+        </div>
+      </div>
+      <section className={styles.atrativos} id="atrativos">
+        <Image
+          className={styles.montanha3}
+          src="/montanha3.svg"
+          alt="banner"
+          width={500}
+          height={200}
+        />
+        <h2 className={styles.tituloatrativos}>Atrativos</h2>
+        <h3 className={styles.tituloatrativos2}>O que fazer em Dianópolis?</h3>
         <div className="container">
-          <div className={`${styles.margintop} row`}>
-            <div className="col d-flex justify-content-center align-items-center">
-              <Image
-                className={styles.deputado}
-                src="/deputado.JPG"
-                alt="turista"
-                width={350}
-                height={500}
-              />
+          <div className={`${styles.paddingtop} row`}>
+            <div className="col-12 col-lg-4">
+              <a
+                href="https://maps.app.goo.gl/qJHe7LTPF6vpr2Ck7"
+                target="_blank"
+              >
+                <Image
+                  className={styles.imagensturisticas}
+                  src="/pracacoreto.jpg"
+                  alt="Praça do Coreto - Dianópolis"
+                  width={344}
+                  height={258}
+                />
+                <p className={styles.fontatrativos}>PRAÇA DO CORETO</p>
+              </a>
             </div>
+            <div className="col-12 col-lg-4">
+              <a
+                href="https://maps.app.goo.gl/nnhNr33nfCzqQ4XVA"
+                target="_blank"
+              >
+                <Image
+                  className={styles.imagensturisticas}
+                  src="/valeencantado.jpg"
+                  alt="Vale Encantado - Dianópolis"
+                  width={344}
+                  height={258}
+                />
+                <p className={styles.fontatrativos}>VALE ENCANTADO</p>
+              </a>
+            </div>
+            <div className="col-12 col-lg-4">
+              <a
+                href="https://maps.app.goo.gl/sqkwWpV9GSJYD7358"
+                target="_blank"
+              >
+                <Image
+                  className={styles.imagensturisticas}
+                  src="/fortalezaguardioes.jpg"
+                  alt="Fortaleza dos Guardiões - Dianópolis"
+                  width={344}
+                  height={258}
+                />
+                <p className={styles.fontatrativos}>FORTALEZA DOS GUARDIÕES</p>
+              </a>
+            </div>
+          </div>
+          <div className="row mt-5">
+            <div className="col-12 col-lg-4">
+              <a
+                href="https://maps.app.goo.gl/Qw8kUzbB7SsivfWK9"
+                target="_blank"
+              >
+                <Image
+                  className={styles.imagensturisticas}
+                  src="/museu.jpg"
+                  alt="Museu Municipal - Dianópolis"
+                  width={344}
+                  height={258}
+                />
+                <p className={styles.fontatrativos}>MUSEU MUNICIPAL</p>
+              </a>
+            </div>
+            <div className="col-12 col-lg-4">
+              <a
+                href="https://maps.app.goo.gl/bLCfEmW5vYXAxmWE7"
+                target="_blank"
+              >
+                <Image
+                  className={styles.imagensturisticas}
+                  src="/cachoeiradare.jpg"
+                  alt="Cachoeira da Ré - Dianópolis"
+                  width={344}
+                  height={258}
+                />
+                <p className={styles.fontatrativos}>CACHOEIRA DA RÉ</p>
+              </a>
+            </div>
+            <div className="col-12 col-lg-4">
+              <a
+                href="https://maps.app.goo.gl/w5isBHT57zwRiNYj6"
+                target="_blank"
+              >
+                <Image
+                  className={styles.imagensturisticas}
+                  src="/cachoeiraorquideas.jpg"
+                  alt="Cachoeira das Orquídeas - Dianópolis"
+                  width={344}
+                  height={258}
+                />
+                <p className={styles.fontatrativos}>CACHOEIRA DAS ORQUÍDEAS</p>
+              </a>
+            </div>
+          </div>
+          <div className="row mt-5">
+            <div className="col-12 col-lg-4">
+              <a
+                href="https://maps.app.goo.gl/PFRtAX2kLDekidQD8"
+                target="_blank"
+              >
+                <Image
+                  className={styles.imagensturisticas}
+                  src="/capelinha.jpg"
+                  alt="Capelinha dos Nove - Dianópolis"
+                  width={344}
+                  height={258}
+                />
+                <p className={styles.fontatrativos}>CAPELINHA DOS NOVE</p>
+              </a>
+            </div>
+            <div className="col-12 col-lg-4">
+              <a
+                href="https://maps.app.goo.gl/skdv62yFWCSkeqZJ7"
+                target="_blank"
+              >
+                <Image
+                  className={styles.imagensturisticas}
+                  src="/casadourada.jpg"
+                  alt="Casa Dourada - Dianópolis"
+                  width={344}
+                  height={258}
+                />
+                <p className={styles.fontatrativos}>CASA DOURADA</p>
+              </a>
+            </div>
+            <div className="col-12 col-lg-4">
+              <a
+                href="https://maps.app.goo.gl/wboP2AFspQBXehS66"
+                target="_blank"
+              >
+                <Image
+                  className={styles.imagensturisticas}
+                  src="/lagoabonita.jpg"
+                  alt="Lagoa Bonita - Dianópolis"
+                  width={344}
+                  height={258}
+                />
+                <p className={styles.fontatrativos}>LAGOA BONITA</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Image
+        className={styles.folhas1}
+        src="/folhas1.png"
+        alt="banner"
+        width={344}
+        height={258}
+      />
+      <Image
+        className={styles.folhas2}
+        src="/folhas2.png"
+        alt="banner"
+        width={344}
+        height={258}
+      />
+      <section className={styles.folhetos} id="folheto">
+        <div className="container p-5">
+          <div className="row mt-5 mb-5">
+            <div className={`${styles.centfolheto} col`}>
+              <p className={styles.descricaofolheto}>
+                Baixar catálogo de experiências da região turística de
+                Dianópolis
+              </p>
+              <a href="#">
+                <Image
+                  className={styles.folhetosturisticos}
+                  src="/folheto.jpg"
+                  alt="Folheto Turístico"
+                  width={500}
+                  height={375}
+                />
+              </a>
+            </div>
+            <div className={`${styles.centfolheto} col`}>
+              <p className={styles.descricaofolheto}>
+                Baixar o mapa ilustrativo da região turística da cidade de
+                Dinanópolis
+              </p>
+              <a href="#">
+                <Image
+                  className={styles.folhetosturisticos}
+                  src="/mapa.jpg"
+                  alt="Mapa Turístico"
+                  width={500}
+                  height={375}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Image
+        className={styles.folhas1}
+        src="/folhas1.png"
+        alt="banner"
+        width={344}
+        height={258}
+      />
+      <Image
+        className={styles.folhas2}
+        src="/folhas2.png"
+        alt="banner"
+        width={344}
+        height={258}
+      />
+      <section className={styles.comochegar} id="chegar">
+        <div className="container pt-5 pb-5">
+          <div className="row pt-5 pb-4">
             <div className="col">
-              <h2 className={`${styles.sobre} text-center`}>Sobre o Município</h2>
-              <p className={styles.sobre}>
-                A história de Dianópolis, localizada no sudeste do estado do
-                Tocantins, está profundamente ligada aos caminhos do interior do
-                Brasil, à exploração do ouro, à religiosidade popular e à
-                resistência de seus habitantes diante das transformações
-                políticas, econômicas e sociais ao longo dos séculos. A
-                religiosidade teve papel fundamental na consolidação do povoado.
-                Esse sentimento religioso foi profundamente marcado por um dos
-                episódios mais trágicos da história local: “Barulho do Duro” ou
-                “Chacina do Duro”, em 1919, quando um
-                conflito coronelístico levou ao massacre de nove cidadãos
-                ligados ao poderoso clã dos Wolney, em uma região conhecida como
-                Duro. Fato que abalou profundamente a população do então arraial
-                de Dianas. O episódio gerou comoção, medo e indignação, mas
-                também fortaleceu a fé popular como forma de enfrentamento da
-                dor e da violência. Como resposta simbólica à tragédia, a
-                comunidade ergueu a Capelinha dos Nove, em homenagem às nove
-                vítimas da chacina. O local passou a ser visto como espaço de
-                oração e respeito transformando o luto coletivo em devoção. Com
-                o tempo, a Capelinha dos Nove consolidou-se como um dos mais
-                importantes marcos históricos de Dianópolis, representando a
-                resistência e a união do povo diante das adversidades. Com o
-                declínio gradual da mineração, Dianópolis passou a se sustentar
-                principalmente pela agricultura, pecuária e comércio local.
-                Mesmo assim, manteve sua importância regional como ponto de
-                ligação entre diferentes áreas do antigo norte goiano.
-                Atualmente, Dianópolis a economia baseia-se principalmente na
-                agropecuária, no comércio e nos serviços, além do crescente
-                potencial turístico. Belezas naturais como cachoeiras, vales,
-                serras e lagoas, aliadas ao patrimônio histórico e às
-                manifestações culturais, atraem visitantes e fortalecem o
-                turismo sustentável. Ao mesmo tempo em que preserva suas raízes
-                históricas, Dianópolis busca se adaptar aos desafios do mundo
-                contemporâneo, investindo em desenvolvimento urbano, educação e
-                valorização cultural. A cidade segue construindo sua história
-                com base na força de seu povo, na memória de seu passado e na
-                esperança de um futuro próspero.
+              <h2 className={styles.titulochegar}>Como Chegar</h2>
+              <a
+                className={styles.linkchegar}
+                href="https://maps.app.goo.gl/cohdWmZdAwVwLeds5"
+                target="_blank"
+              >
+                <Image
+                  className={styles.imagensturisticas}
+                  src="/mapasatelite.jpg"
+                  alt="Mapa de Dianópolis por satélite"
+                  width={450}
+                  height={450}
+                />
+              </a>
+            </div>
+            <div className="col pt-4">
+              Dianópolis é acessível por diversas rotas, facilitando a chegada
+              de visitantes de diferentes localidades.
+              <br />
+              <br />
+              <strong>De Palmas (TO): </strong>
+              Partindo da capital do Tocantins, percorre-se cerca de 350 km até
+              Dianópolis, com o trajeto rodoviário principal seguindo pela
+              BR-153 e TO-050/TO-040. Essa viagem leva cerca de 4 h 30 min a 5 h
+              de carro, com estradas em boas condições na maior parte do
+              percurso
+              <br />
+              <br />
+              <strong>De Araguaína (TO): </strong>
+              Araguaína é um ponto estratégico para quem vem do norte do
+              Tocantins. A distância até Dianópolis é de aproximadamente 220 km
+              a 240 km (via TO-222/TO-050 em parte do trajeto, dependendo da
+              rota escolhida), com estradas bem sinalizadas e percurso
+              tranquilo, levando cerca de 3 h a 4 h de viagem.
+              <br />
+              <br />
+              <strong>De Gurupi (TO): </strong>
+              Gurupi, um dos maiores centros urbanos do sul do Tocantins, fica a
+              aproximadamente 220 km de Dianópolis. O trajeto segue
+              principalmente pela BR-153 e rodovias estaduais, oferecendo boas
+              condições de tráfego e um tempo médio de deslocamento de 3h a
+              3h30.
+              <br />
+              <br />
+              <strong>De Brasília (DF): </strong>
+              Para quem vem da capital federal, Dianópolis está a cerca de 330
+              km de distância. O percurso segue pela BR-020 em direção ao
+              nordeste goiano, conectando-se posteriormente às rodovias
+              estaduais do Tocantins. A viagem costuma durar entre 5h e 6h,
+              atravessando paisagens do Cerrado brasileiro.
+            </div>
+          </div>
+          <div className="row pb-5">
+            <div className="col text-center">
+              <a
+                className={styles.linkchegar}
+                href="https://maps.app.goo.gl/cohdWmZdAwVwLeds5"
+                target="_blank"
+              >
+                <Image
+                  src="/mapicon.png"
+                  alt="Icon Google maps"
+                  width={130}
+                  height={130}
+                />
+                Clique aqui para abrir a localização
+              </a>
+              <br />
+              <br />
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+      </section>
+      <Image
+        className={styles.areia}
+        src="/areia.svg"
+        alt="banner"
+        width={500}
+        height={200}
+      />
+      <h2 className={styles.tituloagencia}>Agências Receptivas</h2>
+      <h3 className={styles.tituloagencia2}>As melhores agências da região.</h3>
+      <section className={styles.fundoareia} id="agencia">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-lg-4">
+              <a
+                className={styles.linkchegar}
+                href="https://share.google/O8yEF8v8ZJgG6KFiT"
+                target="_blank"
+              >
+                <Image
+                  src="/qrcode.png"
+                  alt="qrcode"
+                  width={300}
+                  height={300}
+                />
+              </a>
+              <p className={styles.qrcode}>
+                Agência Torre da Lua Ecoturismo <br />
+                @torredaluaecoturismo <br />
+                99 98169-5190
+              </p>
+            </div>
+            <div className="col-12 col-lg-4">
+              <a
+                className={styles.linkchegar}
+                href="https://share.google/O8yEF8v8ZJgG6KFiT"
+                target="_blank"
+              >
+                <Image
+                  src="/qrcode.png"
+                  alt="qrcode"
+                  width={300}
+                  height={300}
+                />
+              </a>
+              <p className={styles.qrcode}>
+                Agência Torre da Lua Ecoturismo <br />
+                @torredaluaecoturismo <br />
+                99 98169-5190
+              </p>
+            </div>
+            <div className="col-12 col-lg-4">
+              <a
+                className={styles.linkchegar}
+                href="https://share.google/O8yEF8v8ZJgG6KFiT"
+                target="_blank"
+              >
+                <Image
+                  src="/qrcode.png"
+                  alt="qrcode"
+                  width={300}
+                  height={300}
+                />
+              </a>
+              <p className={styles.qrcode}>
+                Agência Torre da Lua Ecoturismo <br />
+                @torredaluaecoturismo <br />
+                99 98169-5190
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12 col-lg-4">
+              <a
+                className={styles.linkchegar}
+                href="https://share.google/O8yEF8v8ZJgG6KFiT"
+                target="_blank"
+              >
+                <Image
+                  src="/qrcode.png"
+                  alt="qrcode"
+                  width={300}
+                  height={300}
+                />
+              </a>
+              <p className={styles.qrcode}>
+                Agência Torre da Lua Ecoturismo <br />
+                @torredaluaecoturismo <br />
+                99 98169-5190
+              </p>
+            </div>
+            <div className="col-12 col-lg-4">
+              <a
+                className={styles.linkchegar}
+                href="https://share.google/O8yEF8v8ZJgG6KFiT"
+                target="_blank"
+              >
+                <Image
+                  src="/qrcode.png"
+                  alt="qrcode"
+                  width={300}
+                  height={300}
+                />
+              </a>
+              <p className={styles.qrcode}>
+                Agência Torre da Lua Ecoturismo <br />
+                @torredaluaecoturismo <br />
+                99 98169-5190
+              </p>
+            </div>
+            <div className="col-12 col-lg-4">
+              <a
+                className={styles.linkchegar}
+                href="https://share.google/O8yEF8v8ZJgG6KFiT"
+                target="_blank"
+              >
+                <Image
+                  src="/qrcode.png"
+                  alt="qrcode"
+                  width={300}
+                  height={300}
+                />
+              </a>
+              <p className={styles.qrcode}>
+                Agência Torre da Lua Ecoturismo <br />
+                @torredaluaecoturismo <br />
+                99 98169-5190
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section>
-         <Image
-                className={styles.montanha1}
-                src="/montanha3.svg"
-                alt="banner"
-                width={350}
-                height={500}
-              />
-
+      <Image
+        className={styles.areia2}
+        src="/areia.svg"
+        alt="banner"
+        width={500}
+        height={200}
+      />
+      <section className={styles.guardioes}>
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <h2 className={styles.guardioestitulo}>
+                Em Dianópolis, somos guardiões de tradições centenárias e
+                paisagens deslumbrantes, convidando você a se reconectar com a
+                essência da vida.
+              </h2>
+            </div>
+          </div>
+        </div>
       </section>
+      <section className="bg-ligt pt-5 pb-5">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <h3>Realização:</h3>
+              <Image
+                src="/logocidade.png"
+                alt="Logo"
+                width={400}
+                height={118}
+              />
+            </div>
+            <div className="col">
+              <Image
+                src="/logosebrae.png"
+                alt="Logo"
+                width={297}
+                height={150}
+              />
+            </div>
+            <div className="col">
+              <Image src="/logosetuc.png" alt="Logo" width={350} height={154} />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer className={styles.footer}>
+        <p className="m-0">
+          2025 © Prefeitura de Dianópolis, Todos os direitos reservados.
+        </p>
+      </footer>
     </div>
   );
 }
