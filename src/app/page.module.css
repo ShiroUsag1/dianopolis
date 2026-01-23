@@ -1,141 +1,70 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
+.centralizando {
+  margin: 10vh 0;
+}
 
-  --text-primary: #000;
-  --text-secondary: #666;
+.deputado{
+  width: auto;
+  height: 80vh;
+  border-radius: 30px;
+  border: solid white 8px;
+}
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
+.fundomain {
+  background-image: url(../../public/fundosite.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
 
-  display: flex;
+.fundoagua {
+  background-image: url(../../public/agua.svg);
+  width: 100vw;
   min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+  position: absolute;
+  z-index: 3;
+  margin-top: -8vh;
 }
 
-.main {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+.margintop{
+  margin-top: 15vh;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
+.montanha1 {
+  width: 100vw;
+  height: auto;
 }
 
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
+.montanha2 {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
 }
 
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
+.sobre{
+  position: relative;
+  z-index: 4;
+  text-align: justify;
+  color: #002F31;
 }
 
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
+.turista {
+  width: auto;
+  height: 70vh;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
-}
-
-.ctas a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
+.titulo1 {
+  font-family: var(--font-lato);
+  background-color: #009bd4;
   width: fit-content;
-  font-weight: 500;
+  padding: 0px 10px;
+  color: white;
+  font-size: clamp(1.8rem, 3vw, 3rem);
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--button-secondary-border);
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-}
-
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
-  }
-
-  .intro {
-    gap: 16px;
-  }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
-  }
-}
