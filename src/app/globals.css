@@ -10,11 +10,15 @@
   }
 }
 
+a{
+  text-decoration: none!important;
+  color: inherit!important;
+}
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: #023047;
 }
 
 * {
@@ -26,12 +30,13 @@ body {
 .nav-item {
   margin-right: 3vw;
   a {
-    color: #004d00;
+    color: #004d00!important;
     text-decoration: none;
     font-size: 1.3vw;
     font-family: var(--font-inter);
   }
 }
+
 
 p {
   font-family: var(--font-inter);
@@ -39,7 +44,6 @@ p {
 
 h2 {
   font-family: var(--font-gupter);
-  font-size: clamp(1.8rem, 3vw, 3rem);
 }
 
 @media (prefers-color-scheme: dark) {
