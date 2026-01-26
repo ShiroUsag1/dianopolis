@@ -8,7 +8,6 @@ export default function Home() {
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <Image
-              className={styles.logo}
               src="/logosite.png"
               alt="logo turismo dianopolis"
               width={230}
@@ -16,6 +15,17 @@ export default function Home() {
               priority
             />
           </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
           <div
             className="collapse navbar-collapse justify-content-end"
             id="navbarNav"
@@ -84,9 +94,9 @@ export default function Home() {
         />
       </section>
       <section className={styles.fundoagua} id="sobre"></section>
-      <div className="container mt-5 mb-5">
+      <div className={`${styles.fundoaguacel} container mt-5 mb-5`}>
         <div className="row">
-          <div className="col d-flex justify-content-center align-items-center">
+          <div className="col text-center">
             <Image
               className={styles.deputado}
               src="/deputado.JPG"
@@ -159,7 +169,7 @@ export default function Home() {
         <h3 className={styles.tituloatrativos2}>O que fazer em Dianópolis?</h3>
         <div className="container">
           <div className={`${styles.paddingtop} row`}>
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 href="https://maps.app.goo.gl/qJHe7LTPF6vpr2Ck7"
                 target="_blank"
@@ -174,7 +184,7 @@ export default function Home() {
                 <p className={styles.fontatrativos}>PRAÇA DO CORETO</p>
               </a>
             </div>
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 href="https://maps.app.goo.gl/nnhNr33nfCzqQ4XVA"
                 target="_blank"
@@ -189,7 +199,7 @@ export default function Home() {
                 <p className={styles.fontatrativos}>VALE ENCANTADO</p>
               </a>
             </div>
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 href="https://maps.app.goo.gl/sqkwWpV9GSJYD7358"
                 target="_blank"
@@ -206,7 +216,7 @@ export default function Home() {
             </div>
           </div>
           <div className="row mt-5">
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 href="https://maps.app.goo.gl/Qw8kUzbB7SsivfWK9"
                 target="_blank"
@@ -221,7 +231,7 @@ export default function Home() {
                 <p className={styles.fontatrativos}>MUSEU MUNICIPAL</p>
               </a>
             </div>
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 href="https://maps.app.goo.gl/bLCfEmW5vYXAxmWE7"
                 target="_blank"
@@ -236,7 +246,7 @@ export default function Home() {
                 <p className={styles.fontatrativos}>CACHOEIRA DA RÉ</p>
               </a>
             </div>
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 href="https://maps.app.goo.gl/w5isBHT57zwRiNYj6"
                 target="_blank"
@@ -253,7 +263,7 @@ export default function Home() {
             </div>
           </div>
           <div className="row mt-5">
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 href="https://maps.app.goo.gl/PFRtAX2kLDekidQD8"
                 target="_blank"
@@ -268,7 +278,7 @@ export default function Home() {
                 <p className={styles.fontatrativos}>CAPELINHA DOS NOVE</p>
               </a>
             </div>
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 href="https://maps.app.goo.gl/skdv62yFWCSkeqZJ7"
                 target="_blank"
@@ -283,7 +293,7 @@ export default function Home() {
                 <p className={styles.fontatrativos}>CASA DOURADA</p>
               </a>
             </div>
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 href="https://maps.app.goo.gl/wboP2AFspQBXehS66"
                 target="_blank"
@@ -456,7 +466,15 @@ export default function Home() {
       <section className={styles.fundoareia} id="agencia">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-4">
+            <div className="col">
+              <h2 className={styles.tituloagencia3}>Agências Receptivas</h2>
+              <h3 className={styles.tituloagencia3}>
+                As melhores agências da região.
+              </h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
               <a
                 className={styles.linkchegar}
                 href="https://share.google/O8yEF8v8ZJgG6KFiT"
@@ -475,7 +493,7 @@ export default function Home() {
                 99 98169-5190
               </p>
             </div>
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 className={styles.linkchegar}
                 href="https://share.google/O8yEF8v8ZJgG6KFiT"
@@ -494,7 +512,7 @@ export default function Home() {
                 99 98169-5190
               </p>
             </div>
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 className={styles.linkchegar}
                 href="https://share.google/O8yEF8v8ZJgG6KFiT"
@@ -515,7 +533,7 @@ export default function Home() {
             </div>
           </div>
           <div className="row">
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 className={styles.linkchegar}
                 href="https://share.google/O8yEF8v8ZJgG6KFiT"
@@ -534,7 +552,7 @@ export default function Home() {
                 99 98169-5190
               </p>
             </div>
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 className={styles.linkchegar}
                 href="https://share.google/O8yEF8v8ZJgG6KFiT"
@@ -553,7 +571,7 @@ export default function Home() {
                 99 98169-5190
               </p>
             </div>
-            <div className="col-12 col-lg-4">
+            <div className="col">
               <a
                 className={styles.linkchegar}
                 href="https://share.google/O8yEF8v8ZJgG6KFiT"
@@ -601,6 +619,7 @@ export default function Home() {
             <div className="col">
               <h3>Realização:</h3>
               <Image
+                className={styles.logo}
                 src="/logocidade.png"
                 alt="Logo"
                 width={400}
@@ -609,6 +628,7 @@ export default function Home() {
             </div>
             <div className="col">
               <Image
+                className={styles.logo}
                 src="/logosebrae.png"
                 alt="Logo"
                 width={297}
@@ -616,7 +636,13 @@ export default function Home() {
               />
             </div>
             <div className="col">
-              <Image src="/logosetuc.png" alt="Logo" width={350} height={154} />
+              <Image
+                className={styles.logo}
+                src="/logosetuc.png"
+                alt="Logo"
+                width={350}
+                height={154}
+              />
             </div>
           </div>
         </div>
