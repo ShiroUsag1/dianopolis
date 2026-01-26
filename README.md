@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto Next.js
 
-## Getting Started
+Este projeto foi desenvolvido utilizando **Next.js**.
 
-First, run the development server:
+## Pré-requisitos
 
-```bash
+Antes de começar, você precisa ter instalado no seu computador:
+
+- **Node.js** (versão 18 ou superior recomendada)
+- **npm** (já vem junto com o Node.js)  
+  ou **yarn** / **pnpm**, se preferir
+
+Para verificar se já tem o Node instalado:
+
+node -v
+npm -v
+
+## Começando
+
+Clonar o projeto
+
+Clone o repositório para sua máquina:
+
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+
+Entre na pasta do projeto:
+
+cd seu-repositorio
+
+Instalar as dependências
+
+Instale as dependências do projeto com um dos comandos abaixo:
+
+Usando npm:
+
+npm install
+
+
+Ou usando yarn:
+
+yarn
+
+
+Ou usando pnpm:
+
+pnpm install
+
+Rodar o projeto em ambiente de desenvolvimento
+
+Após instalar as dependências, execute:
+
 npm run dev
-# or
+
+
+ou
+
 yarn dev
-# or
+
+
+ou
+
 pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+O projeto ficará disponível em:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
+Build para produção (opcional)
 
-To learn more about Next.js, take a look at the following resources:
+Para gerar a versão de produção:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+E para iniciar o servidor em modo produção:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm start
