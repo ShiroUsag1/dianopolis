@@ -10,7 +10,7 @@ export default function Home() {
             <Image
               src="/logosite.png"
               alt="logo turismo dianopolis"
-              width={230}
+              width={188}
               height={60}
               priority
             />
@@ -400,7 +400,7 @@ export default function Home() {
               <br />
               <br />
               <strong>De Palmas (TO): </strong>
-              Partindo da capital do Tocantins, percorre-se cerca de 350 km até
+              Partindo da capital do Tocantins, percorre-se cerca de 339 km até
               Dianópolis, com o trajeto rodoviário principal seguindo pela
               BR-153 e TO-050/TO-040. Essa viagem leva cerca de 4 h 30 min a 5 h
               de carro, com estradas em boas condições na maior parte do
@@ -410,24 +410,24 @@ export default function Home() {
               <strong>De Araguaína (TO): </strong>
               Araguaína é um ponto estratégico para quem vem do norte do
               Tocantins. A distância até Dianópolis é de aproximadamente 220 km
-              a 240 km (via TO-222/TO-050 em parte do trajeto, dependendo da
+              a 719 km (via TO-222/TO-050 em parte do trajeto, dependendo da
               rota escolhida), com estradas bem sinalizadas e percurso
-              tranquilo, levando cerca de 3 h a 4 h de viagem.
+              tranquilo, levando cerca de 9 h a 10 h de viagem.
               <br />
               <br />
               <strong>De Gurupi (TO): </strong>
               Gurupi, um dos maiores centros urbanos do sul do Tocantins, fica a
-              aproximadamente 220 km de Dianópolis. O trajeto segue
+              aproximadamente 326 km de Dianópolis. O trajeto segue
               principalmente pela BR-153 e rodovias estaduais, oferecendo boas
-              condições de tráfego e um tempo médio de deslocamento de 3h a
-              3h30.
+              condições de tráfego e um tempo médio de deslocamento de 4h a
+              5h.
               <br />
               <br />
               <strong>De Brasília (DF): </strong>
-              Para quem vem da capital federal, Dianópolis está a cerca de 330
+              Para quem vem da capital federal, Dianópolis está a cerca de 636
               km de distância. O percurso segue pela BR-020 em direção ao
               nordeste goiano, conectando-se posteriormente às rodovias
-              estaduais do Tocantins. A viagem costuma durar entre 5h e 6h,
+              estaduais do Tocantins. A viagem costuma durar entre 8h e 9h,
               atravessando paisagens do Cerrado brasileiro.
             </div>
           </div>

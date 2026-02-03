@@ -166,7 +166,6 @@
   z-index: 4;
 }
 
-
 .qrcode {
   margin: 2vh;
   font-family: var(--font-lato);
@@ -245,14 +244,14 @@
 }
 
 @media (max-width: 1500px) {
-  .deputado{
+  .deputado {
     margin-top: 10vh;
   }
 
   .fundoareia {
     padding-top: 24vh;
   }
-  
+
   .fundoagua {
     min-height: 138vh;
   }
@@ -309,9 +308,9 @@
   }
 
   .deputado {
-    width: auto;
-    height: 90%;
-    margin: 0 2vh;
+    width: 92vw;
+    height: 62vh;
+    margin: 0 2vh 4vh;
     border: 4px white solid;
   }
 
@@ -341,7 +340,7 @@
     height: 27vh;
   }
 
-  .guardioes{
+  .guardioes {
     text-align: center;
     margin-top: 0;
     padding: 20vh 5vw 15vh;
@@ -357,7 +356,7 @@
     }
   }
 
-  .logo{
+  .logo {
     margin: 3vh 5vw;
     width: 80vw;
     height: auto;
@@ -391,7 +390,7 @@
     margin-bottom: 5vh;
   }
 
-  .qrcode{
+  .qrcode {
     text-align: center;
   }
 
