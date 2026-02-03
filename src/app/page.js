@@ -395,7 +395,8 @@ export default function Home() {
               </a>
             </div>
             <div className="col pt-4">
-              Dianópolis é acessível por diversas rotas, facilitando a chegada
+              <p className={styles.direcoes}>
+                Dianópolis é acessível por diversas rotas, facilitando a chegada
               de visitantes de diferentes localidades.
               <br />
               <br />
@@ -409,8 +410,7 @@ export default function Home() {
               <br />
               <strong>De Araguaína (TO): </strong>
               Araguaína é um ponto estratégico para quem vem do norte do
-              Tocantins. A distância até Dianópolis é de aproximadamente 220 km
-              a 719 km (via TO-222/TO-050 em parte do trajeto, dependendo da
+              Tocantins. A distância até Dianópolis é de aproximadamente 719 km (via TO-222/TO-050 em parte do trajeto, dependendo da
               rota escolhida), com estradas bem sinalizadas e percurso
               tranquilo, levando cerca de 9 h a 10 h de viagem.
               <br />
@@ -429,6 +429,7 @@ export default function Home() {
               nordeste goiano, conectando-se posteriormente às rodovias
               estaduais do Tocantins. A viagem costuma durar entre 8h e 9h,
               atravessando paisagens do Cerrado brasileiro.
+              </p>
             </div>
           </div>
           <div className="row pb-5">

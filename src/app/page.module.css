@@ -51,6 +51,10 @@
   margin-top: 5vh;
 }
 
+.direcoes{
+  text-align: justify;
+}
+
 .footer {
   background-color: #55a4a7;
   color: white;
