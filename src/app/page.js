@@ -72,7 +72,7 @@ export default function Home() {
           <div className="row">
             <div className={`${styles.centralizando} col`}>
               <h2 className={styles.titulo1}>Visite, explore</h2>
-              <h2 className={styles.titulo1}>contemple toda</h2>
+              <h2 className={styles.titulo1}>e contemple toda</h2>
               <h2 className={styles.titulo1}>a natureza</h2>
             </div>
           </div>
@@ -619,30 +619,30 @@ export default function Home() {
           <div className="row">
             <div className="col">
               <h3>Realização:</h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col text-center">
               <Image
                 className={styles.logo}
                 src="/logocidade.png"
                 alt="Logo"
-                width={400}
-                height={118}
+                width={300}
+                height={88}
               />
-            </div>
-            <div className="col">
               <Image
                 className={styles.logo}
                 src="/logosebrae.png"
                 alt="Logo"
-                width={297}
-                height={150}
+                width={219}
+                height={120}
               />
-            </div>
-            <div className="col">
               <Image
                 className={styles.logo}
                 src="/logosetuc.png"
                 alt="Logo"
-                width={350}
-                height={154}
+                width={250}
+                height={100}
               />
             </div>
           </div>

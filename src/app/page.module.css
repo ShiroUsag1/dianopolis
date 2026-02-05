@@ -106,7 +106,7 @@
 
 .fundoareia {
   background-color: #ffb703;
-  padding-top: 27vh;
+  padding-top: 28vh;
 }
 
 .fundomain {
@@ -129,6 +129,7 @@
 }
 
 .guardioestitulo {
+  text-align: center;
   font-family: var(--font-lato);
   font-size: 2rem;
   color: white;
@@ -151,6 +152,10 @@
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.301);
 }
 
+.logo{
+  margin-right: 5vw;
+}
+
 .montanha1 {
   width: 100vw;
   height: auto;
@@ -168,6 +173,7 @@
   height: auto;
   position: relative;
   z-index: 4;
+  margin-top: -1vw;
 }
 
 .qrcode {
@@ -179,7 +185,7 @@
   position: relative;
   z-index: 4;
   text-align: justify;
-  color: #002f31;
+  color: #f1f1f1;
 }
 
 .turista {
@@ -250,10 +256,6 @@
 @media (max-width: 1500px) {
   .deputado {
     margin-top: 10vh;
-  }
-
-  .fundoareia {
-    padding-top: 24vh;
   }
 
   .fundoagua {
@@ -345,7 +347,6 @@
   }
 
   .guardioes {
-    text-align: center;
     margin-top: 0;
     padding: 20vh 5vw 15vh;
   }
