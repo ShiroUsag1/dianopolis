@@ -481,17 +481,17 @@ export default function Home() {
                   <br />(63) 3692-2416</p>
               </div>
               <div className={styles.contato}>
-                <i class="bi bi-envelope-fill"></i>
+                <i className="bi bi-envelope-fill"></i>
                 <p><strong>Email</strong>
                   <br /> turismodno@gmail.com</p>
               </div>
               <div className={styles.contato}>
-                <i class="bi bi-clock-fill"></i>
+                <i className="bi bi-clock-fill"></i>
                 <p><strong>Horário de Funcionamento</strong>
                   <br />De segunda à sexta-feira, das 7h às 13h</p>
               </div>
               <div className={styles.contato}>
-                <i class="bi bi-geo-alt-fill"></i>
+                <i className="bi bi-geo-alt-fill"></i>
                 <p><strong>Endereço</strong>
                   <br />Rua 2, n° 2, Diana Pontes - Centro - 77300-000</p>
 
