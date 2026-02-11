@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Home() {
   return (
@@ -181,7 +182,7 @@ export default function Home() {
                   width={344}
                   height={258}
                 />
-                <p className={styles.fontatrativos}>PRAÇA DO CORETO</p>
+                <p className={styles.fontatrativos}>PRAÇA CEL. WOLNEY</p>
               </a>
             </div>
             <div className="col">
@@ -397,38 +398,38 @@ export default function Home() {
             <div className="col pt-4">
               <p className={styles.direcoes}>
                 Dianópolis é acessível por diversas rotas, facilitando a chegada
-              de visitantes de diferentes localidades.
-              <br />
-              <br />
-              <strong>De Palmas (TO): </strong>
-              Partindo da capital do Tocantins, percorre-se cerca de 339 km até
-              Dianópolis, com o trajeto rodoviário principal seguindo pela
-              BR-153 e TO-050/TO-040. Essa viagem leva cerca de 4 h 30 min a 5 h
-              de carro, com estradas em boas condições na maior parte do
-              percurso
-              <br />
-              <br />
-              <strong>De Araguaína (TO): </strong>
-              Araguaína é um ponto estratégico para quem vem do norte do
-              Tocantins. A distância até Dianópolis é de aproximadamente 719 km (via TO-222/TO-050 em parte do trajeto, dependendo da
-              rota escolhida), com estradas bem sinalizadas e percurso
-              tranquilo, levando cerca de 9 h a 10 h de viagem.
-              <br />
-              <br />
-              <strong>De Gurupi (TO): </strong>
-              Gurupi, um dos maiores centros urbanos do sul do Tocantins, fica a
-              aproximadamente 326 km de Dianópolis. O trajeto segue
-              principalmente pela BR-153 e rodovias estaduais, oferecendo boas
-              condições de tráfego e um tempo médio de deslocamento de 4h a
-              5h.
-              <br />
-              <br />
-              <strong>De Brasília (DF): </strong>
-              Para quem vem da capital federal, Dianópolis está a cerca de 636
-              km de distância. O percurso segue pela BR-020 em direção ao
-              nordeste goiano, conectando-se posteriormente às rodovias
-              estaduais do Tocantins. A viagem costuma durar entre 8h e 9h,
-              atravessando paisagens do Cerrado brasileiro.
+                de visitantes de diferentes localidades.
+                <br />
+                <br />
+                <strong>De Palmas (TO): </strong>
+                Partindo da capital do Tocantins, percorre-se cerca de 339 km até
+                Dianópolis, com o trajeto rodoviário principal seguindo pela
+                BR-153 e TO-050/TO-040. Essa viagem leva cerca de 4 h 30 min a 5 h
+                de carro, com estradas em boas condições na maior parte do
+                percurso
+                <br />
+                <br />
+                <strong>De Araguaína (TO): </strong>
+                Araguaína é um ponto estratégico para quem vem do norte do
+                Tocantins. A distância até Dianópolis é de aproximadamente 719 km (via TO-222/TO-050 em parte do trajeto, dependendo da
+                rota escolhida), com estradas bem sinalizadas e percurso
+                tranquilo, levando cerca de 9 h a 10 h de viagem.
+                <br />
+                <br />
+                <strong>De Gurupi (TO): </strong>
+                Gurupi, um dos maiores centros urbanos do sul do Tocantins, fica a
+                aproximadamente 326 km de Dianópolis. O trajeto segue
+                principalmente pela BR-153 e rodovias estaduais, oferecendo boas
+                condições de tráfego e um tempo médio de deslocamento de 4h a
+                5h.
+                <br />
+                <br />
+                <strong>De Brasília (DF): </strong>
+                Para quem vem da capital federal, Dianópolis está a cerca de 636
+                km de distância. O percurso segue pela BR-020 em direção ao
+                nordeste goiano, conectando-se posteriormente às rodovias
+                estaduais do Tocantins. A viagem costuma durar entre 8h e 9h,
+                atravessando paisagens do Cerrado brasileiro.
               </p>
             </div>
           </div>
@@ -455,141 +456,55 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Image
+      <div
         className={styles.areia}
-        src="/areia.svg"
-        alt="banner"
-        width={500}
-        height={200}
-      />
-      <h2 className={styles.tituloagencia}>Agências Receptivas</h2>
-      <h3 className={styles.tituloagencia2}>As melhores agências da região.</h3>
+      >
+        <h2 className={styles.tituloagencia}>Secretaria Municipal</h2>
+        <h3 className={styles.tituloagencia2}>Entre em contato para saber mais sobre a região.</h3>
+      </div>
+
       <section className={styles.fundoareia} id="agencia">
         <div className="container">
           <div className="row">
             <div className="col">
-              <h2 className={styles.tituloagencia3}>Agências Receptivas</h2>
+              <h2 className={styles.tituloagencia3}>Secretaria Municipal</h2>
               <h3 className={styles.tituloagencia3}>
-                As melhores agências da região.
+                Entre em contato para saber mais sobre a região.
               </h3>
             </div>
           </div>
           <div className="row">
             <div className="col">
-              <a
-                className={styles.linkchegar}
-                href="https://share.google/O8yEF8v8ZJgG6KFiT"
-                target="_blank"
-              >
-                <Image
-                  src="/qrcode.png"
-                  alt="qrcode"
-                  width={300}
-                  height={300}
-                />
-              </a>
-              <p className={styles.qrcode}>
-                Agência Torre da Lua Ecoturismo <br />
-                @torredaluaecoturismo <br />
-                99 98169-5190
-              </p>
+              <div className={styles.contato}>
+                <i className="bi bi-telephone-fill"></i>
+                <p><strong>Telefone</strong>
+                  <br />(63) 3692-2416</p>
+              </div>
+              <div className={styles.contato}>
+                <i class="bi bi-envelope-fill"></i>
+                <p><strong>Email</strong>
+                  <br /> turismodno@gmail.com</p>
+              </div>
+              <div className={styles.contato}>
+                <i class="bi bi-clock-fill"></i>
+                <p><strong>Horário de Funcionamento</strong>
+                  <br />De segunda à sexta-feira, das 7h às 13h</p>
+              </div>
+              <div className={styles.contato}>
+                <i class="bi bi-geo-alt-fill"></i>
+                <p><strong>Endereço</strong>
+                  <br />Rua 2, n° 2, Diana Pontes - Centro - 77300-000</p>
+
+              </div>
             </div>
             <div className="col">
-              <a
-                className={styles.linkchegar}
-                href="https://share.google/O8yEF8v8ZJgG6KFiT"
-                target="_blank"
-              >
-                <Image
-                  src="/qrcode.png"
-                  alt="qrcode"
-                  width={300}
-                  height={300}
-                />
-              </a>
-              <p className={styles.qrcode}>
-                Agência Torre da Lua Ecoturismo <br />
-                @torredaluaecoturismo <br />
-                99 98169-5190
-              </p>
-            </div>
-            <div className="col">
-              <a
-                className={styles.linkchegar}
-                href="https://share.google/O8yEF8v8ZJgG6KFiT"
-                target="_blank"
-              >
-                <Image
-                  src="/qrcode.png"
-                  alt="qrcode"
-                  width={300}
-                  height={300}
-                />
-              </a>
-              <p className={styles.qrcode}>
-                Agência Torre da Lua Ecoturismo <br />
-                @torredaluaecoturismo <br />
-                99 98169-5190
-              </p>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col">
-              <a
-                className={styles.linkchegar}
-                href="https://share.google/O8yEF8v8ZJgG6KFiT"
-                target="_blank"
-              >
-                <Image
-                  src="/qrcode.png"
-                  alt="qrcode"
-                  width={300}
-                  height={300}
-                />
-              </a>
-              <p className={styles.qrcode}>
-                Agência Torre da Lua Ecoturismo <br />
-                @torredaluaecoturismo <br />
-                99 98169-5190
-              </p>
-            </div>
-            <div className="col">
-              <a
-                className={styles.linkchegar}
-                href="https://share.google/O8yEF8v8ZJgG6KFiT"
-                target="_blank"
-              >
-                <Image
-                  src="/qrcode.png"
-                  alt="qrcode"
-                  width={300}
-                  height={300}
-                />
-              </a>
-              <p className={styles.qrcode}>
-                Agência Torre da Lua Ecoturismo <br />
-                @torredaluaecoturismo <br />
-                99 98169-5190
-              </p>
-            </div>
-            <div className="col">
-              <a
-                className={styles.linkchegar}
-                href="https://share.google/O8yEF8v8ZJgG6KFiT"
-                target="_blank"
-              >
-                <Image
-                  src="/qrcode.png"
-                  alt="qrcode"
-                  width={300}
-                  height={300}
-                />
-              </a>
-              <p className={styles.qrcode}>
-                Agência Torre da Lua Ecoturismo <br />
-                @torredaluaecoturismo <br />
-                99 98169-5190
-              </p>
+              <Image
+                className={styles.logocidade}
+                src="/logoturismo.png"
+                alt="banner"
+                width={500}
+                height={200}
+              />
             </div>
           </div>
         </div>

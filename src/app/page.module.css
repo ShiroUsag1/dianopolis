@@ -1,9 +1,27 @@
 .areia {
+  font-size: 18px;
   width: 100vw;
-  height: auto;
+  padding: 6.6em 0vw;
   position: absolute;
-  margin-top: -15vh;
+  margin-top: -16vh;
   z-index: 4;
+  background-image: url(../../public/areia.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  color: white;
+  text-align: center;
+  h2{
+    font-size: 3.5rem;
+    width: 100%;  
+  }
+  h3{
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: var(--font-gupter);
+  }
 }
 
 .areia2 {
@@ -34,6 +52,26 @@
   background-color: #009bd4;
 }
 
+.contato{
+  font-size: 20px;
+  background-color: #ffd772;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  i{
+    height: fit-content;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin-right: 0.8rem;
+    background-color: #ff910a;
+  }
+  p{
+    margin-bottom: 0;
+  }
+}
+
 .descricaofolheto {
   font-size: 1.3em;
   font-family: var(--font-lato);
@@ -51,7 +89,7 @@
   margin-top: 5vh;
 }
 
-.direcoes{
+.direcoes {
   text-align: justify;
 }
 
@@ -97,6 +135,7 @@
 
 .fundoagua {
   background-image: url(../../public/agua.svg);
+  background-size: cover;
   width: 100vw;
   min-height: 122vh;
   position: absolute;
@@ -107,6 +146,7 @@
 .fundoareia {
   background-color: #ffb703;
   padding-top: 28vh;
+  padding-bottom: 5vh;
 }
 
 .fundomain {
@@ -122,7 +162,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 25%;
-  margin-top: 22vh;
+  margin-top: 20vh;
   padding-top: 30vh;
   padding-bottom: 20vh;
   min-height: 50vh;
@@ -152,8 +192,14 @@
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.301);
 }
 
-.logo{
+.logo {
   margin-right: 5vw;
+}
+
+.logocidade{
+  width: 32em;
+  height: auto;
+  margin-left: 3vw;
 }
 
 .montanha1 {
@@ -173,7 +219,7 @@
   height: auto;
   position: relative;
   z-index: 4;
-  margin-top: -1vw;
+  margin-top: -2vh;
 }
 
 .qrcode {
@@ -212,24 +258,6 @@
   font-size: clamp(1.8rem, 3vw, 3rem);
 }
 
-.tituloagencia {
-  position: absolute;
-  z-index: 5;
-  font-size: 4.5em;
-  left: 36vw;
-  margin-top: 0vh;
-  color: white;
-}
-.tituloagencia2 {
-  font-family: var(--font-gupter);
-  position: absolute;
-  z-index: 5;
-  font-size: 2.2em;
-  left: 39vw;
-  margin-top: 9vh;
-  color: white;
-}
-
 .tituloagencia3 {
   display: none;
 }
@@ -237,9 +265,9 @@
 .tituloatrativos {
   position: absolute;
   z-index: 5;
-  font-size: 5em;
+  font-size: 4.5em;
   left: 11vw;
-  margin-top: -34vh;
+  margin-top: -28vh;
   color: white;
 }
 
@@ -247,59 +275,78 @@
   position: absolute;
   z-index: 5;
   font-family: var(--font-gupter);
-  font-size: 2.3em;
+  font-size: 2em;
   left: 9vw;
-  margin-top: -25vh;
+  margin-top: -20vh;
   color: white;
 }
 
-@media (max-width: 1500px) {
-  .deputado {
-    margin-top: 10vh;
+@media (min-width: 1900px) {
+  .areia{
+    padding: 10em 0;
+    h2{
+      font-size: 4.5rem;
+    }
+    h3{
+      font-size: 2.2rem;
+    }
   }
 
-  .fundoagua {
-    min-height: 138vh;
+  .sobre{
+    margin: 0vw 2vw ;
+  }
+  
+   .tituloatrativos {
+  font-size: 5em;
+  left: 11vw;
+  margin-top: -34vh;
+}
+
+.tituloatrativos2 {
+  font-size: 2.3em;
+  left: 9vw;
+  margin-top: -25vh;
+}
+  
+}
+
+
+@media (min-width: 1600px) and (max-width: 1899px) {
+  .areia{
+    padding: 7.5em 0;
+    h2{
+      font-size: 3.8rem;
+    }
+    h3{
+      font-size: 1.8rem;
+    }
+  }
+ .fundoareia{
+    padding-top: 18vh;
+  }
+  
+}
+
+@media  (max-width: 1599px) and (min-width: 1500){
+  .fundoagua{
+    min-height: 159vh;
   }
 
-  .paddingtop {
-    padding-top: 28vh;
+  .tituloatrativos{
+    margin-top: -38vh;
   }
 
-  .montanha3 {
-    width: 100vw;
-    height: auto;
-    position: absolute;
-    z-index: 4;
-    margin-top: -16vh;
+  .tituloatrativos2{
+    margin-top: -27vh;
   }
+}
 
-  .tituloagencia {
-    font-size: 3.5em;
-    margin-top: -1vh;
-    left: 35vw;
+@media (max-width: 1499px) {
+  .montanha3{
+    margin-top: -5vh;
   }
-  .tituloagencia2 {
-    font-size: 1.8em;
-    left: 38vw;
-    margin-top: 7vh;
-  }
-
-  .tituloatrativos {
-    position: absolute;
-    z-index: 5;
-    font-size: 4em;
-    margin-top: -2vh;
-    color: aliceblue;
-  }
-
-  .tituloatrativos2 {
-    position: absolute;
-    z-index: 5;
-    font-family: var(--font-gupter);
-    font-size: 1.7em;
-    margin-top: 7vh;
-    color: aliceblue;
+  .fundoareia{
+    padding-top: 18vh;
   }
 }
 
@@ -355,6 +402,7 @@
     display: flex;
     justify-content: center;
     font-size: 2rem;
+
     .imagensturisticas {
       width: 85vw;
       height: auto;
@@ -367,12 +415,32 @@
     height: auto;
   }
 
+  .logocidade{
+    width: 80vw;
+  }
+
   .montanha3 {
     margin-top: -6vh;
   }
 
   p.sobre {
     padding: 5vw;
+  }
+
+  .paddingtop{
+    padding-top: 5vh;
+  }
+
+  .tituloatrativos {
+    position: relative;
+    margin-top: 1vh;
+    font-size: 3.5rem;
+  }
+
+  .tituloatrativos2 {
+    position: relative;
+    margin-top: 1vh;
+    font-size: 1.6rem;
   }
 
   .tituloagencia,
@@ -390,6 +458,7 @@
   h2.tituloagencia3 {
     font-size: 3.5em;
   }
+
   h3.tituloagencia3 {
     font-size: 2em;
     margin-bottom: 5vh;
@@ -403,14 +472,6 @@
     font-size: 4em;
     text-align: center;
     margin-bottom: 4vh;
-  }
-
-  .tituloatrativos {
-    margin-top: 7vh;
-  }
-
-  .tituloatrativos2 {
-    margin-top: 17vh;
   }
 
   .turista {
