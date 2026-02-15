@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import CardHover from "../components/CardHover"
 
 export default function Home() {
   return (
@@ -344,21 +345,6 @@ export default function Home() {
                 />
               </a>
             </div>
-            <div className={`${styles.centfolheto} col`}>
-              <p className={styles.descricaofolheto}>
-                Baixar o mapa ilustrativo da região turística da cidade de
-                Dinanópolis
-              </p>
-              <a href="#">
-                <Image
-                  className={styles.folhetosturisticos}
-                  src="/mapa.jpg"
-                  alt="Mapa Turístico"
-                  width={500}
-                  height={375}
-                />
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -379,23 +365,22 @@ export default function Home() {
       <section className={styles.comochegar} id="chegar">
         <div className="container pt-5 pb-5">
           <div className="row pt-5 pb-4">
-            <div className="col">
+            <div className="col-12 col-lg-6">
               <h2 className={styles.titulochegar}>Como Chegar</h2>
               <a
                 className={styles.linkchegar}
                 href="https://maps.app.goo.gl/cohdWmZdAwVwLeds5"
                 target="_blank"
               >
-                <Image
-                  className={styles.imagensturisticas}
-                  src="/mapasatelite.jpg"
-                  alt="Mapa de Dianópolis por satélite"
-                  width={450}
-                  height={450}
-                />
+                <div>
+                  <CardHover
+                    imgDefault="/mapasatelite.png"
+                    imgHover="/mapa.png"
+                  />
+                </div>
               </a>
             </div>
-            <div className="col pt-4">
+            <div className="col-12 col-lg-6">
               <p className={styles.direcoes}>
                 Dianópolis é acessível por diversas rotas, facilitando a chegada
                 de visitantes de diferentes localidades.
@@ -460,7 +445,7 @@ export default function Home() {
         className={styles.areia}
       >
         <h2 className={styles.tituloagencia}>Secretaria Municipal</h2>
-        <h3 className={styles.tituloagencia2}>Entre em contato para saber mais sobre a região.</h3>
+        <h3 className={styles.tituloagencia2}>de Turismo e Cultura</h3>
       </div>
 
       <section className={styles.fundoareia} id="agencia">
@@ -469,7 +454,7 @@ export default function Home() {
             <div className="col">
               <h2 className={styles.tituloagencia3}>Secretaria Municipal</h2>
               <h3 className={styles.tituloagencia3}>
-                Entre em contato para saber mais sobre a região.
+                de Turismo e Cultura
               </h3>
             </div>
           </div>
