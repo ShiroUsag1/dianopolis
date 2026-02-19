@@ -55,7 +55,7 @@ export default function Home() {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#agencia">
-                  Agências Receptivas
+                 Contato Institucional
                 </a>
               </li>
             </ul>
