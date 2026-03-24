@@ -1,7 +1,7 @@
 .areia {
   font-size: 18px;
   width: 100vw;
-  padding: 6.6em 0vw;
+  padding: 6em 0vw;
   position: absolute;
   margin-top: -16vh;
   z-index: 4;
@@ -41,6 +41,29 @@
   padding-bottom: 8vh;
 }
 
+.btncontato,.btnatrativo{
+  color: #212529;
+  font-family: var(--font-oswald);
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.301);
+  font-size: 35px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5vh;
+  background-color: #ff910a;
+  transition: background-color 0.5s ease;
+  
+}
+
+.btncontato:hover {
+  background-color: #ffd772;
+}
+
+.btnatrativo{
+  background-color: #c43c0a;
+  margin: 0;
+}
+
 .centralizando {
   margin: 10vh 0;
 }
@@ -74,6 +97,12 @@
   p {
     margin-bottom: 0;
   }
+}
+
+.descricaocarousel {
+  font-size: 1.3em;
+  color: #212529;
+  text-align: justify;
 }
 
 .descricaofolheto {
@@ -182,6 +211,12 @@
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.301);
 }
 
+.imagenscarousel {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
 .imagensturisticas {
   border: solid white 5px;
   transition: transform 0.3s ease;
@@ -198,8 +233,15 @@
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.301);
 }
 
-.logo {
-  margin-right: 5vw;
+.logo, .brasao {
+  padding-top: 10px;
+  padding-right: 20px;
+  width: 20%;
+  height: auto;
+}
+
+.brasao{
+  width: 12%;
 }
 
 .logocidade {
@@ -288,9 +330,16 @@
   color: white;
 }
 
+.titulocarousel{
+  font-family: var(--font-gupter);
+  color: #f1f1f1;
+  font-size: 65px;
+}
+
+
 @media (min-width: 1900px) {
   .areia {
-    padding: 10em 0;
+    padding: 9em 0;
 
     h2 {
       font-size: 4.5rem;
@@ -302,7 +351,7 @@
   }
 
   .fundoagua {
-    min-height: 129vh;
+    min-height: 132vh;
   }
 
   .sobre {
@@ -343,7 +392,7 @@
 
 @media (max-width: 1599px) and (min-width: 1350px) and (min-height: 600px) and (max-height: 750px) {
   .fundoagua {
-    min-height: 166vh;
+    min-height: 189vh;
   }
 
   .tituloatrativos {
@@ -445,10 +494,14 @@
     }
   }
 
-  .logo {
+  .logo, .brasao {
     margin: 3vh 5vw;
     width: 80vw;
     height: auto;
+  }
+
+  .brasao{
+    width: 50vw;
   }
 
   .logocidade {

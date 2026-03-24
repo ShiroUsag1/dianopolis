@@ -55,7 +55,7 @@ export default function Home() {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#agencia">
-                 Contato Institucional
+                  Contato Institucional
                 </a>
               </li>
             </ul>
@@ -170,7 +170,74 @@ export default function Home() {
         <h2 className={styles.tituloatrativos}>Atrativos</h2>
         <h3 className={styles.tituloatrativos2}>O que fazer em Dianópolis?</h3>
         <div className="container">
-          <div className={`${styles.paddingtop} row`}>
+          <div className="row">
+            <div className="col">
+              <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+                <div className="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <Image
+                      className={styles.imagenscarousel}
+                      src="/foto1.png"
+                      alt="Praça do Coreto - Dianópolis"
+                      width={344}
+                      height={258}
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <Image
+                      className={styles.imagenscarousel}
+                      src="/foto2.png"
+                      alt="Praça do Coreto - Dianópolis"
+                      width={344}
+                      height={258}
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <Image
+                      className={styles.imagenscarousel}
+                      src="/foto3.png"
+                      alt="Praça do Coreto - Dianópolis"
+                      width={344}
+                      height={258}
+                    />
+                  </div>
+                </div>
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Previous</span>
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div className="col d-grid align-items-between">
+              <div>
+                <h2 className={styles.titulocarousel}>Descubra os encantos de Dianópolis</h2>
+                <p className={styles.descricaocarousel}>
+                  Onde a natureza exuberante se encontra com a história vibrante. Explore cachoeiras
+                  cristalinas, vales encantados e serras majestosas, enquanto
+                  mergulha na rica cultura local. 
+                  <br />
+                  Deixe-se envolver pela magia
+                  de Dianópolis, um destino que promete experiências inesquecíveis
+                  para todos os tipos de viajantes.
+                </p>
+              </div>
+              <div className="text-center d-grid align-items-end">
+                <a className={styles.btnatrativo} href="#chegar">
+                  Saiba Como Chegar
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* <div className={`${styles.paddingtop} row`}>
             <div className="col">
               <a
                 href="https://maps.app.goo.gl/qJHe7LTPF6vpr2Ck7"
@@ -310,7 +377,7 @@ export default function Home() {
                 <p className={styles.fontatrativos}>LAGOA BONITA</p>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <Image
@@ -335,7 +402,7 @@ export default function Home() {
                 Baixar catálogo de experiências da região turística de
                 Dianópolis
               </p>
-              <a href="#">
+              <a href="https://meusitenanet.com.br/download/folderdianopolis.pdf" target="_blank">
                 <Image
                   className={styles.folhetosturisticos}
                   src="/folheto.jpg"
@@ -492,6 +559,13 @@ export default function Home() {
               />
             </div>
           </div>
+          <div className="row">
+            <div className="col text-center pt-5 pb-5">
+              <a className={styles.btncontato} href="https://www.dianopolis.to.gov.br/ouvidoria" target="_blank">
+                Ouvidoria Online
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <Image
@@ -514,8 +588,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-ligt pt-5 pb-5">
-        <div className="container">
+      <section className="bg-ligt pt-5 pb-5 d-grid align-items-center justify-content-center">
+        <div className="container m-0">
           <div className="row">
             <div className="col">
               <h3>Realização:</h3>
@@ -525,17 +599,31 @@ export default function Home() {
             <div className="col text-center">
               <Image
                 className={styles.logo}
-                src="/logocidade.png"
-                alt="Logo"
-                width={300}
-                height={88}
-              />
-              <Image
-                className={styles.logo}
                 src="/logosebrae.png"
                 alt="Logo"
                 width={219}
                 height={120}
+              />
+              <Image
+                className={styles.logo}
+                src="/cidadeempreendedora.png"
+                alt="Logo"
+                width={300}
+                height={95}
+              />
+              <Image
+                className={styles.brasao}
+                src="/brasão.png"
+                alt="Logo"
+                width={145}
+                height={120}
+              />
+              <Image
+                className={styles.logo}
+                src="/logocidade.png"
+                alt="Logo"
+                width={300}
+                height={88}
               />
               <Image
                 className={styles.logo}
