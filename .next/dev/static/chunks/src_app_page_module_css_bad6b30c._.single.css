@@ -1,0 +1,567 @@
+/* [project]/src/app/page.module.css [app-client] (css) */
+.page-module___8aEwW__areia {
+  z-index: 4;
+  color: #fff;
+  text-align: center;
+  background-image: url("../media/areia.b57f0dfd.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100vw;
+  margin-top: -16vh;
+  padding: 6em 0;
+  font-size: 18px;
+  display: flex;
+  position: absolute;
+}
+
+.page-module___8aEwW__areia h2 {
+  width: 100%;
+  font-size: 3.5rem;
+}
+
+.page-module___8aEwW__areia h3 {
+  width: 100%;
+  font-size: 2.5rem;
+  font-family: var(--font-gupter);
+}
+
+.page-module___8aEwW__areia2 {
+  z-index: 4;
+  width: 100vw;
+  height: auto;
+  margin-top: -1vh;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.page-module___8aEwW__atrativos {
+  z-index: 4;
+  background-color: #ff910a;
+  padding-bottom: 8vh;
+}
+
+.page-module___8aEwW__btncontato, .page-module___8aEwW__btnatrativo {
+  color: #212529;
+  font-family: var(--font-oswald);
+  background-color: #ff910a;
+  border: none;
+  border-radius: 10px;
+  margin: 5vh;
+  padding: 15px;
+  font-size: 35px;
+  transition: background-color .5s;
+  box-shadow: 4px 4px 2px #0000004d;
+}
+
+.page-module___8aEwW__btncontato:hover {
+  background-color: #ffd772;
+}
+
+.page-module___8aEwW__btnatrativo {
+  background-color: #c43c0a;
+  margin: 0;
+}
+
+.page-module___8aEwW__centralizando {
+  margin: 10vh 0;
+}
+
+.page-module___8aEwW__centfolheto {
+  justify-items: center;
+  display: grid;
+}
+
+.page-module___8aEwW__comochegar {
+  background-color: #009bd4;
+}
+
+.page-module___8aEwW__contato {
+  background-color: #ffd772;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+}
+
+.page-module___8aEwW__contato i {
+  background-color: #ff910a;
+  border-radius: 10px;
+  height: fit-content;
+  margin-right: .8rem;
+  padding: .5rem 1rem;
+  font-size: 2rem;
+}
+
+.page-module___8aEwW__contato p {
+  margin-bottom: 0;
+}
+
+.page-module___8aEwW__descricaocarousel {
+  color: #212529;
+  text-align: justify;
+  font-size: 1.3em;
+}
+
+.page-module___8aEwW__descricaofolheto {
+  font-size: 1.3em;
+  font-family: var(--font-lato);
+  text-align: center;
+  color: #fff;
+}
+
+.page-module___8aEwW__deputado {
+  z-index: 3;
+  border: 8px solid #fff;
+  border-radius: 30px;
+  width: auto;
+  height: 80vh;
+  margin-top: 5vh;
+  position: relative;
+}
+
+.page-module___8aEwW__direcoes {
+  text-align: justify;
+  margin-top: 6em;
+  margin-left: 2em;
+}
+
+.page-module___8aEwW__footer {
+  color: #fff;
+  font-family: var(--font-lato);
+  text-align: center;
+  background-color: #55a4a7;
+  padding: 5px 0;
+}
+
+.page-module___8aEwW__fontatrativos {
+  font-family: var(--font-oswald);
+  background-color: #fff;
+  width: fit-content;
+  padding: 5px 13px;
+  font-size: 1.5em;
+}
+
+.page-module___8aEwW__folhas1, .page-module___8aEwW__folhas2 {
+  z-index: 999;
+  margin-top: -18vh;
+  position: absolute;
+}
+
+.page-module___8aEwW__folhas2 {
+  right: 0;
+}
+
+.page-module___8aEwW__folhetos {
+  background: linear-gradient(#003600, #2f6b2f);
+}
+
+.page-module___8aEwW__folhetosturisticos {
+  border: 5px solid #fff;
+  border-radius: 50px;
+  transition: transform .3s;
+}
+
+.page-module___8aEwW__folhetosturisticos:hover {
+  transform: scale(1.1);
+}
+
+.page-module___8aEwW__fundoagua {
+  z-index: 3;
+  background-image: url("../media/agua.ab2a5cce.svg");
+  background-size: cover;
+  width: 100vw;
+  min-height: 140vh;
+  margin-top: -8vh;
+  position: absolute;
+}
+
+.page-module___8aEwW__fundoareia {
+  background-color: #ffb703;
+  padding-top: 28vh;
+  padding-bottom: 5vh;
+}
+
+.page-module___8aEwW__fundomain {
+  background-image: url("../media/fundosite.6ed18539.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.page-module___8aEwW__guardioes {
+  background-image: url("../media/guardioesfundo.b667e990.jpg");
+  background-position: 100% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  margin-top: 20vh;
+  padding-top: 30vh;
+  padding-bottom: 20vh;
+}
+
+.page-module___8aEwW__guardioestitulo {
+  text-align: center;
+  font-family: var(--font-lato);
+  color: #fff;
+  text-shadow: 4px 4px 2px #0000004d;
+  font-size: 2rem;
+}
+
+.page-module___8aEwW__hoteis {
+  background: linear-gradient(#2f6b2f, #009bd4);
+  padding: 2em;
+}
+
+.page-module___8aEwW__imagenscarousel {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.page-module___8aEwW__imagensturisticas {
+  border: 5px solid #fff;
+  transition: transform .3s;
+}
+
+.page-module___8aEwW__imagensturisticas:hover {
+  transform: scale(1.1);
+}
+
+.page-module___8aEwW__linkchegar {
+  font-family: var(--font-lato);
+  text-shadow: 4px 4px 2px #0000004d;
+  font-size: 3rem;
+  color: #fff !important;
+}
+
+.page-module___8aEwW__logo, .page-module___8aEwW__brasao {
+  width: 20%;
+  height: auto;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.page-module___8aEwW__brasao {
+  width: 12%;
+}
+
+.page-module___8aEwW__logocidade {
+  width: 32em;
+  height: auto;
+  margin-left: 3vw;
+}
+
+.page-module___8aEwW__montanha1 {
+  width: 100vw;
+  height: auto;
+}
+
+.page-module___8aEwW__montanha2 {
+  object-fit: cover;
+  z-index: 1;
+  width: 100vw;
+  height: auto;
+}
+
+.page-module___8aEwW__montanha3 {
+  z-index: 4;
+  width: 100vw;
+  height: auto;
+  margin-top: -2vh;
+  position: relative;
+}
+
+.page-module___8aEwW__qrcode {
+  font-family: var(--font-lato);
+  margin: 2vh;
+}
+
+.page-module___8aEwW__sobre {
+  z-index: 4;
+  text-align: justify;
+  color: #f1f1f1;
+  position: relative;
+}
+
+.page-module___8aEwW__turista {
+  z-index: 2;
+  width: auto;
+  height: 70vh;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  transform: translateX(-50%);
+}
+
+.page-module___8aEwW__titulochegar {
+  color: #fff;
+  font-size: 5em;
+}
+
+.page-module___8aEwW__titulo1 {
+  font-family: var(--font-lato);
+  color: #fff;
+  background-color: #009bd4;
+  width: fit-content;
+  padding: 0 10px;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+.page-module___8aEwW__tituloagencia3 {
+  display: none;
+}
+
+.page-module___8aEwW__tituloatrativos {
+  z-index: 5;
+  color: #fff;
+  margin-top: -33vh;
+  font-size: 4.5em;
+  position: absolute;
+  left: 11vw;
+}
+
+.page-module___8aEwW__tituloatrativos2 {
+  z-index: 5;
+  font-family: var(--font-gupter);
+  color: #fff;
+  margin-top: -24vh;
+  font-size: 2em;
+  position: absolute;
+  left: 9vw;
+}
+
+.page-module___8aEwW__titulocarousel {
+  font-family: var(--font-gupter);
+  color: #f1f1f1;
+  font-size: 65px;
+}
+
+@media (min-width: 1900px) {
+  .page-module___8aEwW__areia {
+    padding: 9em 0;
+  }
+
+  .page-module___8aEwW__areia h2 {
+    font-size: 4.5rem;
+  }
+
+  .page-module___8aEwW__areia h3 {
+    font-size: 3.5rem;
+  }
+
+  .page-module___8aEwW__fundoagua {
+    min-height: 132vh;
+  }
+
+  .page-module___8aEwW__sobre {
+    margin: 0 2vw;
+  }
+
+  .page-module___8aEwW__tituloatrativos {
+    margin-top: -34vh;
+    font-size: 5em;
+    left: 11vw;
+  }
+
+  .page-module___8aEwW__tituloatrativos2 {
+    margin-top: -25vh;
+    font-size: 2.3em;
+    left: 9vw;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1899px) {
+  .page-module___8aEwW__areia {
+    padding: 7.5em 0;
+  }
+
+  .page-module___8aEwW__areia h2 {
+    font-size: 3.8rem;
+  }
+
+  .page-module___8aEwW__areia h3 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 1599px) and (min-width: 1350px) and (min-height: 600px) and (max-height: 750px) {
+  .page-module___8aEwW__fundoagua {
+    min-height: 189vh;
+  }
+
+  .page-module___8aEwW__tituloatrativos {
+    margin-top: -38vh;
+    font-size: 3.7rem;
+  }
+
+  .page-module___8aEwW__tituloatrativos2 {
+    margin-top: -27vh;
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1500px) and (min-width: 1000px) and (min-height: 700px) {
+  .page-module___8aEwW__fundoagua {
+    min-height: 150vh;
+  }
+
+  .page-module___8aEwW__montanha3 {
+    margin-top: -5vh;
+  }
+
+  .page-module___8aEwW__tituloatrativos {
+    margin-top: -35vh;
+    font-size: 4rem;
+    left: 11vw;
+  }
+
+  .page-module___8aEwW__tituloatrativos2 {
+    margin-top: -25vh;
+    font-size: 2rem;
+    left: 9vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .page-module___8aEwW__areia {
+    margin-top: -9vh;
+  }
+
+  .page-module___8aEwW__descricaofolheto {
+    margin: 5vh 0 2vh;
+  }
+
+  .page-module___8aEwW__deputado {
+    border: 4px solid #fff;
+    width: 92vw;
+    height: 62vh;
+    margin: 0 2vh 4vh;
+  }
+
+  .page-module___8aEwW__direcoes {
+    margin-top: 2em;
+    margin-left: 0;
+  }
+
+  .page-module___8aEwW__fundoagua {
+    display: none;
+  }
+
+  .page-module___8aEwW__fundoaguacel {
+    background-color: #009bd4;
+    padding: 5vh 0;
+    margin: 0 !important;
+  }
+
+  .page-module___8aEwW__fundoareia {
+    padding-top: 5vh;
+  }
+
+  .page-module___8aEwW__folhas1, .page-module___8aEwW__folhas2 {
+    width: 50vw;
+    height: 18vh;
+    margin-top: -10vh;
+  }
+
+  .page-module___8aEwW__folhetosturisticos {
+    width: 77vw;
+    height: 27vh;
+  }
+
+  .page-module___8aEwW__guardioes {
+    margin-top: 0;
+    padding: 20vh 5vw 15vh;
+  }
+
+  .page-module___8aEwW__linkchegar {
+    justify-content: center;
+    font-size: 2rem;
+    display: flex;
+  }
+
+  .page-module___8aEwW__linkchegar .page-module___8aEwW__imagensturisticas {
+    width: 85vw;
+    height: auto;
+  }
+
+  .page-module___8aEwW__logo, .page-module___8aEwW__brasao {
+    width: 80vw;
+    height: auto;
+    margin: 3vh 5vw;
+  }
+
+  .page-module___8aEwW__brasao {
+    width: 50vw;
+  }
+
+  .page-module___8aEwW__logocidade {
+    width: 80vw;
+  }
+
+  .page-module___8aEwW__montanha3 {
+    margin-top: -6vh;
+  }
+
+  p.page-module___8aEwW__sobre {
+    padding: 5vw;
+  }
+
+  .page-module___8aEwW__paddingtop {
+    padding-top: 5vh;
+  }
+
+  .page-module___8aEwW__tituloatrativos {
+    margin-top: 1vh;
+    font-size: 3.5rem;
+    position: relative;
+  }
+
+  .page-module___8aEwW__tituloatrativos2 {
+    margin-top: 1vh;
+    font-size: 1.6rem;
+    position: relative;
+  }
+
+  .page-module___8aEwW__tituloagencia, .page-module___8aEwW__tituloagencia2 {
+    display: none;
+  }
+
+  .page-module___8aEwW__tituloagencia3 {
+    color: #fff;
+    font-family: var(--font-gupter);
+    text-align: center;
+    display: block;
+  }
+
+  h2.page-module___8aEwW__tituloagencia3 {
+    font-size: 3.5em;
+  }
+
+  h3.page-module___8aEwW__tituloagencia3 {
+    margin-bottom: 5vh;
+    font-size: 3em;
+  }
+
+  .page-module___8aEwW__qrcode {
+    text-align: center;
+  }
+
+  .page-module___8aEwW__titulochegar {
+    text-align: center;
+    margin-bottom: 4vh;
+    font-size: 4em;
+  }
+
+  .page-module___8aEwW__turista {
+    height: 30vh;
+    bottom: 0;
+    right: 0;
+    transform: none;
+  }
+}
+
+/*# sourceMappingURL=src_app_page_module_css_bad6b30c._.single.css.map*/

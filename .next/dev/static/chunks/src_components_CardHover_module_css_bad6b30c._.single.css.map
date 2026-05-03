@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/CardHover.module.css"],"sourcesContent":[".card {\r\n  position: relative;\r\n  display: inline-block; \r\n  overflow: hidden;\r\n  transition: transform 0.4s ease;\r\n  border: solid white 5px;\r\n}\r\n\r\n.zoom {\r\n  transform: scale(1.05);\r\n}\r\n\r\n.image,\r\n.imageHover {\r\n  display: block;\r\n  width: 100%;\r\n  height: auto; \r\n  transition: opacity 0.4s ease;\r\n}\r\n\r\n.imageHover {\r\n  position: absolute;\r\n  inset: 0;\r\n  opacity: 0;\r\n}\r\n\r\n.hide {\r\n  opacity: 0;\r\n}\r\n\r\n.show {\r\n  opacity: 1;\r\n}\r\n\r\n\r\n.show {\r\n  opacity: 1;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;AAQA;;;;AAIA;;;;;;;AAQA;;;;;;AAMA;;;;AAIA"}}]
+}

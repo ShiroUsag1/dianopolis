@@ -1,0 +1,25 @@
+/* [project]/src/app/lato_9521262e.module.css [app-client] (css) */
+@font-face {
+  font-family: lato;
+  src: url("../media/Lato_Bold-s.p.7a751b63.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: lato Fallback;
+  src: local(Arial);
+  ascent-override: 98.27%;
+  descent-override: 21.21%;
+  line-gap-override: 0.0%;
+  size-adjust: 100.43%;
+}
+
+.lato_9521262e-module__yT7GAW__className {
+  font-family: lato, lato Fallback;
+}
+
+.lato_9521262e-module__yT7GAW__variable {
+  --font-lato: "lato", "lato Fallback";
+}
+
+/*# sourceMappingURL=src_app_lato_9521262e_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,25 @@
+/* [project]/src/app/oswald_49a824d3.module.css [app-client] (css) */
+@font-face {
+  font-family: oswald;
+  src: url("../media/Oswald_Bold-s.p.9f0114c8.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: oswald Fallback;
+  src: local(Arial);
+  ascent-override: 129.69%;
+  descent-override: 31.42%;
+  line-gap-override: 0.0%;
+  size-adjust: 91.99%;
+}
+
+.oswald_49a824d3-module__T4_qRG__className {
+  font-family: oswald, oswald Fallback;
+}
+
+.oswald_49a824d3-module__T4_qRG__variable {
+  --font-oswald: "oswald", "oswald Fallback";
+}
+
+/*# sourceMappingURL=src_app_oswald_49a824d3_module_css_bad6b30c._.single.css.map*/

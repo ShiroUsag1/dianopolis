@@ -1,0 +1,25 @@
+/* [project]/src/app/gupter_f8edbc90.module.css [app-client] (css) */
+@font-face {
+  font-family: gupter;
+  src: url("../media/Gupter_Bold-s.p.2816ae9f.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: gupter Fallback;
+  src: local(Arial);
+  ascent-override: 96.24%;
+  descent-override: 26.73%;
+  line-gap-override: 0.0%;
+  size-adjust: 93.52%;
+}
+
+.gupter_f8edbc90-module__NPFfCq__className {
+  font-family: gupter, gupter Fallback;
+}
+
+.gupter_f8edbc90-module__NPFfCq__variable {
+  --font-gupter: "gupter", "gupter Fallback";
+}
+
+/*# sourceMappingURL=src_app_gupter_f8edbc90_module_css_bad6b30c._.single.css.map*/

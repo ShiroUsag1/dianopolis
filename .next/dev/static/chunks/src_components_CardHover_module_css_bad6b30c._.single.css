@@ -1,0 +1,36 @@
+/* [project]/src/components/CardHover.module.css [app-client] (css) */
+.CardHover-module__3X_9QG__card {
+  border: 5px solid #fff;
+  transition: transform .4s;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.CardHover-module__3X_9QG__zoom {
+  transform: scale(1.05);
+}
+
+.CardHover-module__3X_9QG__image, .CardHover-module__3X_9QG__imageHover {
+  width: 100%;
+  height: auto;
+  transition: opacity .4s;
+  display: block;
+}
+
+.CardHover-module__3X_9QG__imageHover {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+}
+
+.CardHover-module__3X_9QG__hide {
+  opacity: 0;
+}
+
+.CardHover-module__3X_9QG__show {
+  opacity: 1;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=src_components_CardHover_module_css_bad6b30c._.single.css.map*/

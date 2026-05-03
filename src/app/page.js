@@ -1,7 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import CardHover from "../components/CardHover"
+import "bootstrap-icons/font/bootstrap-icons.css";
+import CardHover from "../components/CardHover";
+import StaySection from "@/components/StaySection";
 
 export default function Home() {
   return (
@@ -172,11 +173,32 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col">
-              <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+              <div
+                id="carouselExampleIndicators"
+                className="carousel slide"
+                data-bs-ride="carousel"
+              >
                 <div className="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    className="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
                 </div>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
@@ -207,27 +229,45 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button
+                  className="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
                   <span className="visually-hidden">Previous</span>
                 </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
                   <span className="visually-hidden">Next</span>
                 </button>
               </div>
             </div>
             <div className="col d-grid align-items-between">
               <div>
-                <h2 className={styles.titulocarousel}>Descubra os encantos de Dianópolis</h2>
+                <h2 className={styles.titulocarousel}>
+                  Descubra os encantos de Dianópolis
+                </h2>
                 <p className={styles.descricaocarousel}>
-                  Onde a natureza exuberante se encontra com a história vibrante. Explore cachoeiras
-                  cristalinas, vales encantados e serras majestosas, enquanto
-                  mergulha na rica cultura local. 
+                  Onde a natureza exuberante se encontra com a história
+                  vibrante. Explore cachoeiras cristalinas, vales encantados e
+                  serras majestosas, enquanto mergulha na rica cultura local.
                   <br />
-                  Deixe-se envolver pela magia
-                  de Dianópolis, um destino que promete experiências inesquecíveis
-                  para todos os tipos de viajantes.
+                  Deixe-se envolver pela magia de Dianópolis, um destino que
+                  promete experiências inesquecíveis para todos os tipos de
+                  viajantes.
                 </p>
               </div>
               <div className="text-center d-grid align-items-end">
@@ -402,7 +442,10 @@ export default function Home() {
                 Baixar catálogo de experiências da região turística de
                 Dianópolis
               </p>
-              <a href="https://meusitenanet.com.br/download/folderdianopolis.pdf" target="_blank">
+              <a
+                href="https://meusitenanet.com.br/download/folderdianopolis.pdf"
+                target="_blank"
+              >
                 <Image
                   className={styles.folhetosturisticos}
                   src="/folheto.jpg"
@@ -429,9 +472,45 @@ export default function Home() {
         width={344}
         height={258}
       />
+       <section className={styles.hoteis}>
+        <StaySection
+          bannerTitle="ONDE FICAR EM DIANÓPOLIS"
+          bannerSubtitle="Município de Dianópolis de Serras Gerais"
+          bannerImage="bannerhoteis.jpg"
+          cards={[
+            {
+              id: "1",
+              title: "Pousada Exemplo",
+              description: "Área, ar e café da manhã incluso.",
+              image: "pousadaexemplo1.jpg",
+              rating: 4.5,
+            },
+            {
+              id: "2",
+              title: "Pousada Exemplo",
+              description: "Ótima localização e conforto.",
+              image: "pousadaexemplo2.jpg",
+              rating: 4.5,
+            },
+            {
+              id: "3",
+              title: "Pousada Exemplo",
+              description: "Espaço amplo e estacionamento.",
+              image: "pousadaexemplo3.jpg",
+              rating: 4.5,
+            },
+          ]}
+          cta={{
+            title: "Seu estabelecimento aqui?",
+            description: "Faça parte do guia oficial.",
+            buttonText: "Cadastrar",
+            link: "/cadastro",
+          }}
+        />
+      </section>
       <section className={styles.comochegar} id="chegar">
-        <div className="container pt-5 pb-5">
-          <div className="row pt-5 pb-4">
+        <div className="container pb-5">
+          <div className="row pb-4">
             <div className="col-12 col-lg-6">
               <h2 className={styles.titulochegar}>Como Chegar</h2>
               <a
@@ -454,23 +533,24 @@ export default function Home() {
                 <br />
                 <br />
                 <strong>De Palmas (TO): </strong>
-                Partindo da capital do Tocantins, percorre-se cerca de 339 km até
-                Dianópolis, com o trajeto rodoviário principal seguindo pela
-                BR-153 e TO-050/TO-040. Essa viagem leva cerca de 4 h 30 min a 5 h
-                de carro, com estradas em boas condições na maior parte do
+                Partindo da capital do Tocantins, percorre-se cerca de 339 km
+                até Dianópolis, com o trajeto rodoviário principal seguindo pela
+                BR-153 e TO-050/TO-040. Essa viagem leva cerca de 4 h 30 min a 5
+                h de carro, com estradas em boas condições na maior parte do
                 percurso
                 <br />
                 <br />
                 <strong>De Araguaína (TO): </strong>
                 Araguaína é um ponto estratégico para quem vem do norte do
-                Tocantins. A distância até Dianópolis é de aproximadamente 719 km (via TO-222/TO-050 em parte do trajeto, dependendo da
-                rota escolhida), com estradas bem sinalizadas e percurso
-                tranquilo, levando cerca de 9 h a 10 h de viagem.
+                Tocantins. A distância até Dianópolis é de aproximadamente 719
+                km (via TO-222/TO-050 em parte do trajeto, dependendo da rota
+                escolhida), com estradas bem sinalizadas e percurso tranquilo,
+                levando cerca de 9 h a 10 h de viagem.
                 <br />
                 <br />
                 <strong>De Gurupi (TO): </strong>
-                Gurupi, um dos maiores centros urbanos do sul do Tocantins, fica a
-                aproximadamente 326 km de Dianópolis. O trajeto segue
+                Gurupi, um dos maiores centros urbanos do sul do Tocantins, fica
+                a aproximadamente 326 km de Dianópolis. O trajeto segue
                 principalmente pela BR-153 e rodovias estaduais, oferecendo boas
                 condições de tráfego e um tempo médio de deslocamento de 4h a
                 5h.
@@ -508,9 +588,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div
-        className={styles.areia}
-      >
+      <div className={styles.areia}>
         <h2 className={styles.tituloagencia}>Secretaria Municipal</h2>
         <h3 className={styles.tituloagencia2}>de Turismo e Cultura</h3>
       </div>
@@ -520,33 +598,41 @@ export default function Home() {
           <div className="row">
             <div className="col">
               <h2 className={styles.tituloagencia3}>Secretaria Municipal</h2>
-              <h3 className={styles.tituloagencia3}>
-                de Turismo e Cultura
-              </h3>
+              <h3 className={styles.tituloagencia3}>de Turismo e Cultura</h3>
             </div>
           </div>
           <div className="row">
             <div className="col">
               <div className={styles.contato}>
                 <i className="bi bi-telephone-fill"></i>
-                <p><strong>Telefone</strong>
-                  <br />(63) 3692-2416</p>
+                <p>
+                  <strong>Telefone</strong>
+                  <br />
+                  (63) 3692-2416
+                </p>
               </div>
               <div className={styles.contato}>
                 <i className="bi bi-envelope-fill"></i>
-                <p><strong>Email</strong>
-                  <br /> turismodno@gmail.com</p>
+                <p>
+                  <strong>Email</strong>
+                  <br /> turismodno@gmail.com
+                </p>
               </div>
               <div className={styles.contato}>
                 <i className="bi bi-clock-fill"></i>
-                <p><strong>Horário de Funcionamento</strong>
-                  <br />De segunda à sexta-feira, das 7h às 13h</p>
+                <p>
+                  <strong>Horário de Funcionamento</strong>
+                  <br />
+                  De segunda à sexta-feira, das 7h às 13h
+                </p>
               </div>
               <div className={styles.contato}>
                 <i className="bi bi-geo-alt-fill"></i>
-                <p><strong>Endereço</strong>
-                  <br />Rua 2, n° 2, Diana Pontes - Centro - 77300-000</p>
-
+                <p>
+                  <strong>Endereço</strong>
+                  <br />
+                  Rua 2, n° 2, Diana Pontes - Centro - 77300-000
+                </p>
               </div>
             </div>
             <div className="col">
@@ -561,8 +647,12 @@ export default function Home() {
           </div>
           <div className="row">
             <div className="col text-center pt-5 pb-5">
-              <a className={styles.btncontato} href="https://www.dianopolis.to.gov.br/ouvidoria" target="_blank">
-                Ouvidoria Online
+              <a
+                className={styles.btncontato}
+                href="https://www.dianopolis.to.gov.br/ouvidoria"
+                target="_blank"
+              >
+                <i className="bi bi-megaphone-fill"></i> Ouvidoria Online
               </a>
             </div>
           </div>
