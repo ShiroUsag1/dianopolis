@@ -1,0 +1,19 @@
+{
+  "app": {
+    "[project]/src/app/_not-found/page": [
+      "static/media/Inter_Regular-s.p.5eb63a54.ttf",
+      "static/media/Gupter_Bold-s.p.2816ae9f.ttf",
+      "static/media/Lato_Bold-s.p.7a751b63.ttf",
+      "static/media/Oswald_Bold-s.p.9f0114c8.ttf"
+    ],
+    "[project]/src/app/page": [
+      "static/media/Inter_Regular-s.p.5eb63a54.ttf",
+      "static/media/Gupter_Bold-s.p.2816ae9f.ttf",
+      "static/media/Lato_Bold-s.p.7a751b63.ttf",
+      "static/media/Oswald_Bold-s.p.9f0114c8.ttf"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

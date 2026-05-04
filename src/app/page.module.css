@@ -41,8 +41,7 @@
   padding-bottom: 8vh;
 }
 
-.btncontato,
-.btnatrativo {
+.btncontato,.btnatrativo{
   color: #212529;
   font-family: var(--font-oswald);
   box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.301);
@@ -53,13 +52,14 @@
   margin: 5vh;
   background-color: #ff910a;
   transition: background-color 0.5s ease;
+  
 }
 
 .btncontato:hover {
   background-color: #ffd772;
 }
 
-.btnatrativo {
+.btnatrativo{
   background-color: #c43c0a;
   margin: 0;
 }
@@ -100,7 +100,6 @@
 }
 
 .descricaocarousel {
-  font-size: 1.3em;
   color: #212529;
   text-align: justify;
 }
@@ -113,13 +112,11 @@
 }
 
 .deputado {
-  width: auto;
-  height: 80vh;
+  width: 100%;
+  height: auto;
   border-radius: 30px;
-  border: solid white 8px;
+  border: solid white 2px;
   position: relative;
-  z-index: 3;
-  margin-top: 5vh;
 }
 
 .direcoes {
@@ -172,11 +169,9 @@
 .fundoagua {
   background-image: url(../../public/agua.svg);
   background-size: cover;
-  width: 100vw;
-  min-height: 140vh;
-  position: absolute;
-  z-index: 3;
-  margin-top: -8vh;
+  position: relative;
+  margin-top: -9vh;
+  padding: 12vh 0 20vh;
 }
 
 .fundoareia {
@@ -194,7 +189,7 @@
 }
 
 .guardioes {
-  background-image: url(../../public/guardioesfundo.jpg);
+  background-image: url(../../public/guardioesfundo.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 25%;
@@ -239,15 +234,14 @@
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.301);
 }
 
-.logo,
-.brasao {
+.logo, .brasao {
   padding-top: 10px;
   padding-right: 20px;
   width: 20%;
   height: auto;
 }
 
-.brasao {
+.brasao{
   width: 12%;
 }
 
@@ -274,7 +268,7 @@
   height: auto;
   position: relative;
   z-index: 4;
-  margin-top: -2vh;
+  margin-top: -25vh;
 }
 
 .qrcode {
@@ -284,10 +278,17 @@
 
 .sobre {
   position: relative;
-  z-index: 4;
   text-align: justify;
   color: #f1f1f1;
 }
+
+ p.sobre {
+    margin: 0 2vw 6vh;
+  }
+
+  h2.sobre{
+    margin-bottom: 2vh;
+  }
 
 .turista {
   width: auto;
@@ -296,7 +297,7 @@
   bottom: 0;
   right: 5%;
   transform: translateX(-50%);
-  z-index: 2;
+  z-index: 0;
 }
 
 .titulochegar {
@@ -317,6 +318,7 @@
   display: none;
 }
 
+
 .tituloatrativos {
   position: absolute;
   z-index: 5;
@@ -336,11 +338,18 @@
   color: white;
 }
 
-.titulocarousel {
+.titulocarousel{
   font-family: var(--font-gupter);
   color: #f1f1f1;
-  font-size: 65px;
+ font-size: 3em;
 }
+
+.titulocarousel2{
+  font-family: var(--font-gupter);
+  color: #6f2121;
+ font-size: 2em;
+}
+
 
 @media (min-width: 1900px) {
   .areia {
@@ -355,12 +364,8 @@
     }
   }
 
-  .fundoagua {
-    min-height: 132vh;
-  }
-
-  .sobre {
-    margin: 0vw 2vw;
+  .descricaocarousel {
+    font-size: 1.3em;
   }
 
   .tituloatrativos {
@@ -374,7 +379,16 @@
     left: 9vw;
     margin-top: -25vh;
   }
+
+  .titulocarousel {
+    font-size: 4em;
+  }
+  .titulocarousel2 {
+    font-size: 3em;
+  }
+
 }
+
 
 @media (min-width: 1600px) and (max-width: 1899px) {
   .areia {
@@ -388,13 +402,12 @@
       font-size: 2.8rem;
     }
   }
+
+
+
 }
 
 @media (max-width: 1599px) and (min-width: 1350px) and (min-height: 600px) and (max-height: 750px) {
-  .fundoagua {
-    min-height: 189vh;
-  }
-
   .tituloatrativos {
     margin-top: -38vh;
     font-size: 3.7rem;
@@ -407,14 +420,6 @@
 }
 
 @media (max-width: 1500px) and (min-width: 1000px) and (min-height: 700px) {
-  .fundoagua {
-    min-height: 150vh;
-  }
-
-  .montanha3 {
-    margin-top: -5vh;
-  }
-
   .tituloatrativos {
     left: 11vw;
     margin-top: -35vh;
@@ -426,6 +431,7 @@
     margin-top: -25vh;
     font-size: 2rem;
   }
+
 }
 
 /* Versão para celular */
@@ -438,26 +444,27 @@
     margin: 5vh 0px 2vh;
   }
 
-  .deputado {
-    width: 92vw;
-    height: 62vh;
-    margin: 0 2vh 4vh;
-    border: 4px white solid;
+  .descricaocarousel {
+   padding: 2vh 5vw;
   }
 
-  .direcoes {
+  .deputado {
+    width: 100%;
+    height: auto;
+    border: 2px white solid;
+  }
+
+  .direcoes{
     margin-top: 2em;
     margin-left: 0;
+    padding: 0 5vw;
   }
 
   .fundoagua {
-    display: none;
-  }
-
-  .fundoaguacel {
+    background-image: none;
     background-color: #009bd4;
     margin: 0 !important;
-    padding: 5vh 0;
+    padding: 1px 0;
   }
 
   .fundoareia {
@@ -492,14 +499,13 @@
     }
   }
 
-  .logo,
-  .brasao {
+  .logo, .brasao {
     margin: 3vh 5vw;
     width: 80vw;
     height: auto;
   }
 
-  .brasao {
+  .brasao{
     width: 50vw;
   }
 
@@ -513,10 +519,18 @@
 
   p.sobre {
     padding: 5vw;
+    margin: 0;
+  }
+   h2.sobre {
+    font-size: 3rem!important;
+    margin-bottom: 2vh;
   }
 
   .paddingtop {
     padding-top: 5vh;
+  }
+   .qrcode {
+    text-align: center;
   }
 
   .tituloatrativos {
@@ -552,8 +566,8 @@
     margin-bottom: 5vh;
   }
 
-  .qrcode {
-    text-align: center;
+  .titulocarousel {
+    font-size: 2.2em;
   }
 
   .titulochegar {
@@ -568,4 +582,5 @@
     right: 0;
     transform: none;
   }
+ 
 }
