@@ -1,10 +1,165 @@
-[00:00:00.894] Server  LOG     ✓ Ready in 580ms
-[00:00:03.925] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:02.607] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:02.733] Browser WARN    Image with src "/montanha1.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:02:08.551] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:08.710] Browser WARN    Image with src "/areia.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:03:00.166] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
-[00:03:48.307] Server  LOG     ✓ Compiled in 14ms
+[00:00:01.120] Server  LOG     ✓ Ready in 731ms
+[00:00:03.169] Server  ERROR   ⨯ ./src/app/page.module.css:193:22
+Module not found: Can't resolve '../../public/guardioesfundo.webp'
+  191 | .guardioes {
+  192 |   background-image: url(../../public/guardioesfundo.webp);
+> 193 |   background-size: cover;
+      |                      ^
+  194 |   background-repeat: no-repeat;
+  195 |   background-position: 100% 25%;
+  196 |   margin-top: 20vh;
+
+
+
+Import trace:
+  Server Component:
+    ./src/app/page.module.css
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:03.614] Browser ERROR   uncaughtError: Error: ./src/app/page.module.css:193:22
+Module not found: Can't resolve '../../public/guardioesfundo.webp'
+  191 | .guardioes {
+  192 |   background-image: url(../../public/guardioesfundo.webp);
+> 193 |   background-size: cover;
+      |                      ^
+  194 |   background-repeat: no-repeat;
+  195 |   background-position: 100% 25%;
+  196 |   margin-top: 20vh;
+
+
+
+Import trace:
+  Server Component:
+    ./src/app/page.module.css
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:03.810] Browser ERROR   ./src/app/page.module.css:193:22
+Module not found: Can't resolve '../../public/guardioesfundo.webp'
+  191 | .guardioes {
+  192 |   background-image: url(../../public/guardioesfundo.webp);
+> 193 |   background-size: cover;
+      |                      ^
+  194 |   background-repeat: no-repeat;
+  195 |   background-position: 100% 25%;
+  196 |   margin-top: 20vh;
+
+Import trace:
+  Server Component:
+    ./src/app/page.module.css
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.810] Browser ERROR   ./src/app/page.module.css:193:22
+Module not found: Can't resolve '../../public/guardioesfundo.webp'
+  191 | .guardioes {
+  192 |   background-image: url(../../public/guardioesfundo.webp);
+> 193 |   background-size: cover;
+      |                      ^
+  194 |   background-repeat: no-repeat;
+  195 |   background-position: 100% 25%;
+  196 |   margin-top: 20vh;
+
+Import trace:
+  Server Component:
+    ./src/app/page.module.css
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:04.183] Browser ERROR   ./src/app/page.module.css:193:22
+Module not found: Can't resolve '../../public/guardioesfundo.webp'
+  191 | .guardioes {
+  192 |   background-image: url(../../public/guardioesfundo.webp);
+> 193 |   background-size: cover;
+      |                      ^
+  194 |   background-repeat: no-repeat;
+  195 |   background-position: 100% 25%;
+  196 |   margin-top: 20vh;
+
+Import trace:
+  Server Component:
+    ./src/app/page.module.css
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:08.463] Server  ERROR   ⨯ ./src/app/page.module.css:193:22
+Module not found: Can't resolve '../../public/guardioesfundo.webp'
+  191 | .guardioes {
+  192 |   background-image: url(../../public/guardioesfundo.webp);
+> 193 |   background-size: cover;
+      |                      ^
+  194 |   background-repeat: no-repeat;
+  195 |   background-position: 100% 25%;
+  196 |   margin-top: 20vh;
+
+
+
+Import trace:
+  Server Component:
+    ./src/app/page.module.css
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:08.641] Browser ERROR   uncaughtError: Error: ./src/app/page.module.css:193:22
+Module not found: Can't resolve '../../public/guardioesfundo.webp'
+  191 | .guardioes {
+  192 |   background-image: url(../../public/guardioesfundo.webp);
+> 193 |   background-size: cover;
+      |                      ^
+  194 |   background-repeat: no-repeat;
+  195 |   background-position: 100% 25%;
+  196 |   margin-top: 20vh;
+
+
+
+Import trace:
+  Server Component:
+    ./src/app/page.module.css
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:08.827] Browser ERROR   ./src/app/page.module.css:193:22
+Module not found: Can't resolve '../../public/guardioesfundo.webp'
+  191 | .guardioes {
+  192 |   background-image: url(../../public/guardioesfundo.webp);
+> 193 |   background-size: cover;
+      |                      ^
+  194 |   background-repeat: no-repeat;
+  195 |   background-position: 100% 25%;
+  196 |   margin-top: 20vh;
+
+Import trace:
+  Server Component:
+    ./src/app/page.module.css
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:08.828] Browser ERROR   ./src/app/page.module.css:193:22
+Module not found: Can't resolve '../../public/guardioesfundo.webp'
+  191 | .guardioes {
+  192 |   background-image: url(../../public/guardioesfundo.webp);
+> 193 |   background-size: cover;
+      |                      ^
+  194 |   background-repeat: no-repeat;
+  195 |   background-position: 100% 25%;
+  196 |   margin-top: 20vh;
+
+Import trace:
+  Server Component:
+    ./src/app/page.module.css
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:44.325] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:47.740] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:50.630] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:01.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

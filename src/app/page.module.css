@@ -181,7 +181,7 @@
 }
 
 .fundomain {
-  background-image: url(../../public/fundosite.png);
+  background-image: url(../../public/fundosite.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -189,7 +189,7 @@
 }
 
 .guardioes {
-  background-image: url(../../public/guardioesfundo.JPG);
+  background-image: url(../../public/guardioesfundo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100% 25%;
